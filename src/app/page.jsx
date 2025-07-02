@@ -212,7 +212,7 @@ function MainComponent() {
       </nav>
 
       {/* Hero Section - Enhanced for all devices */}
-      <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 lg:pt-40 text-center relative overflow-hidden">
+      <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 lg:pt-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-10 animate-fade-in-up">
