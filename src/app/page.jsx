@@ -87,12 +87,30 @@ function MainComponent() {
       {/* Fixed Navigation with Hamburger Menu */}
       <nav className="fixed top-0 left-0 right-0 bg-transparent shadow-sm px-4 sm:px-6 lg:px-8 py-3 sm:py-4 z-50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Stylized Gradient Logo */}
-          <div
-            className="font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl select-none transition-all duration-300 animate-slide-in-left bg-gradient-to-r from-blue-500 via-violet-500 via-60% to-orange-400 to-90% to-white bg-clip-text text-transparent font-[Poppins,sans-serif] text-center lg:text-left cursor-pointer hover:brightness-125 hover:drop-shadow-[0_2px_8px_rgba(255,255,255,0.5)]"
-            style={{ fontFamily: 'Poppins, Nunito, Inter, sans-serif' }}
-          >
-            Aaryavarta
+          {/* Stylized SVG Logo for Aaryavarta */}
+          <div className="flex items-center gap-2 select-none animate-slide-in-left">
+            {/* SVG stylized A */}
+            <svg width="38" height="44" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 drop-shadow-[0_2px_8px_rgba(80,80,255,0.25)]">
+              <polygon points="19,2 36,42 2,42" fill="url(#logo-gradient)" />
+              <circle cx="19" cy="15" r="2.2" fill="#fff"/>
+              <circle cx="19" cy="23" r="2.2" fill="#fff"/>
+              <circle cx="19" cy="31" r="2.2" fill="#fff"/>
+              <defs>
+                <linearGradient id="logo-gradient" x1="2" y1="2" x2="36" y2="42" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3b82f6"/>
+                  <stop offset="0.5" stop-color="#8b5cf6"/>
+                  <stop offset="1" stop-color="#fb923c"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            {/* Gradient text for rest of the name */}
+            <span
+              className="font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl bg-gradient-to-r from-blue-500 via-purple-500 to-orange-400 bg-clip-text text-transparent font-[Poppins,sans-serif] drop-shadow-[0_2px_8px_rgba(80,80,255,0.25)] hover:brightness-125 transition-all duration-300 text-center lg:text-left"
+              style={{ fontFamily: 'Poppins, Nunito, Inter, sans-serif' }}
+            >
+              aryavarta
+            </span>
           </div>
 
           {/* Desktop Menu */}
