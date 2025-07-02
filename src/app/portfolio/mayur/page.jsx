@@ -108,7 +108,7 @@ function MainComponent() {
                 <p className="text-gray-600 text-sm md:text-lg leading-relaxed mb-6 max-w-3xl">
                   Electronics & Telecommunication Engineer with expertise in embedded systems, sensor interfacing, and IoT development. Proficient in Python, Embedded C, and real-time automation using Raspberry Pi and Arduino. Fast learner with national-level achievements and a drive for hardware innovation.
                 </p>
-                <div className="flex flex-col sm:flex-row md:flex-row md:items-center gap-4 sm:gap-6 md:gap-8 w-full justify-center">
+                <div className="flex flex-col sm:flex-row md:flex-row md:items-center gap-4 sm:gap-6 md:gap-8 w-full justify-center md:justify-start">
                   <a
                     href="/Mayur%20Patil_Resume%20Hardware.pdf"
                     download
@@ -150,7 +150,7 @@ function MainComponent() {
                         </div>
                         <div className="flex items-center text-gray-700 text-base">
                           <i className="fas fa-envelope text-blue-500 mr-2"></i>
-                          <span className="truncate">patilmayur0204@gmail.com</span>
+                          <span className="truncate">patilmayur987654321@gmail.com</span>
                         </div>
                         <a href="https://www.linkedin.com/in/mayur-patil-0204" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:underline text-base">
                           <i className="fab fa-linkedin mr-2"></i>
@@ -758,10 +758,10 @@ function MainComponent() {
                 Email
               </h3>
               <a
-                href="mailto:patilmayur0204@gmail.com"
+                href="mailto:patilmayur987654321@gmail.com"
                 className="text-blue-600 hover:text-blue-800 text-sm md:text-base transition-colors duration-300"
               >
-                patilmayur0204@gmail.com
+                patilmayur987654321@gmail.com
               </a>
             </div>
 
@@ -817,7 +817,7 @@ function MainComponent() {
               your ideas to life.
             </p>
             <a
-              href="mailto:patilmayur0204@gmail.com"
+              href="mailto:patilmayur987654321@gmail.com"
               className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg inline-block"
             >
               Start a Conversation

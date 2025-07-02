@@ -803,10 +803,10 @@ function MainComponent() {
                 Email
               </h3>
               <a
-                href="mailto:ganesh.wankhade@example.com"
+                href="mailto:ganeshwankhade8010@gmail.com"
                 className="text-blue-600 hover:text-blue-800 text-sm md:text-base transition-colors duration-300"
               >
-                ganesh.wankhade@example.com
+                ganeshwankhade8010@gmail.com
               </a>
             </div>
 
@@ -864,7 +864,7 @@ function MainComponent() {
               your ideas to life.
             </p>
             <a
-              href="mailto:ganesh.wankhade@example.com"
+              href="mailto:ganeshwankhade8010@gmail.com"
               className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg inline-block"
             >
               Start a Conversation
@@ -903,7 +903,7 @@ function MainComponent() {
                   <i className="fab fa-github"></i>
                 </a>
                 <a
-                  href="mailto:ganesh.wankhade@example.com"
+                  href="mailto:ganeshwankhade8010@gmail.com"
                   className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125 hover:rotate-12"
                 >
                   <i className="fas fa-envelope"></i>

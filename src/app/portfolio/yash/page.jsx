@@ -111,7 +111,7 @@ function MainComponent() {
             style={{ animationDelay: "0.2s" }}
           >
             <a
-              href="mailto:yash.dhake@example.com"
+              href="mailto:dhakeyash2004@gmail.com"
               className="flex items-center justify-center bg-orange-100 text-orange-700 px-4 py-2 rounded-lg hover:bg-orange-200 hover:scale-105 transition-all duration-300"
             >
               <i className="fas fa-envelope mr-2"></i>
@@ -629,7 +629,7 @@ function MainComponent() {
             collaborate to create clear, comprehensive solutions.
           </p>
           <a
-            href="mailto:yash.dhake@example.com"
+            href="mailto:dhakeyash2004@gmail.com"
             className="inline-block bg-white text-orange-600 px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-medium hover:bg-gray-100 hover:scale-105 transition-all duration-300 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
@@ -643,7 +643,7 @@ function MainComponent() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center space-x-6 mb-4">
             <a
-              href="mailto:yash.dhake@example.com"
+              href="mailto:dhakeyash2004@gmail.com"
               className="text-gray-400 hover:text-white hover:scale-125 transition-all duration-300"
             >
               <i className="fas fa-envelope text-xl"></i>
