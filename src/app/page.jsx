@@ -90,10 +90,10 @@ function MainComponent() {
           {/* Logo Image for Aaryavarta */}
           <div className="flex items-center gap-2 select-none animate-slide-in-left w-auto justify-start">
             <img
-              src="/aaryvarta_logo-removebg.png"
+              src="/aaryvarta_logo-removebg-2.png"
               alt="Aaryavarta Logo"
-              className="h-12 sm:h-14 lg:h-16 w-auto object-contain drop-shadow-[0_2px_8px_rgba(80,80,255,0.15)]"
-              style={{ maxWidth: '220px' }}
+              className="h-9 sm:h-14 lg:h-16 w-auto object-contain drop-shadow-[0_2px_8px_rgba(80,80,255,0.15)]"
+              style={{ maxWidth: '180px' }}
             />
           </div>
 
