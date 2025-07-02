@@ -206,42 +206,24 @@ function MainComponent() {
       </nav>
 
       {/* Hero Section - Enhanced for all devices */}
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-16 sm:py-20 lg:py-24 xl:py-32 pt-24 sm:pt-28 lg:pt-32 xl:pt-40 text-center relative overflow-hidden">
+      <section className="min-h-[80vh] sm:min-h-[70vh] flex flex-col justify-center px-4 py-10 sm:px-8 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
-        <div className="max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto relative z-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8 animate-fade-in-up">
-            Welcome to{" "}
-            <span className="text-blue-600 animate-gradient-text">
-              Aaryavarta
-            </span>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <h1 className="text-5xl sm:text-4xl font-bold text-gray-900 mb-8 animate-fade-in-up">
+            Welcome to <span className="text-blue-600 animate-gradient-text">Aaryavarta</span>
           </h1>
-          <p
-            className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 italic mb-2 sm:mb-3 lg:mb-4 animate-fade-in-up px-2 sm:px-4"
-            style={{ animationDelay: "0.2s" }}
-          >
-            "Dream is not that which you see while sleeping, it is something
-            that does not let you sleep."
+          <p className="text-xl sm:text-lg text-gray-600 italic mb-4 animate-fade-in-up px-2" style={{ animationDelay: "0.2s" }}>
+            "Dream is not that which you see while sleeping, it is something that does not let you sleep."
           </p>
-          <p
-            className="text-blue-600 font-medium mb-4 sm:mb-6 lg:mb-8 text-sm sm:text-base lg:text-lg xl:text-xl animate-fade-in-up"
-            style={{ animationDelay: "0.4s" }}
-          >
+          <p className="text-blue-600 font-medium mb-8 text-xl sm:text-lg animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             — Dr. A.P.J. Abdul Kalam
           </p>
-          <p
-            className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 mb-6 sm:mb-8 lg:mb-12 max-w-2xl xl:max-w-3xl mx-auto animate-fade-in-up px-2 sm:px-4"
-            style={{ animationDelay: "0.6s" }}
-          >
-            Showcasing innovative projects and the brilliant minds behind
-            cutting-edge technology solutions.
+          <p className="text-lg sm:text-base text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in-up px-2" style={{ animationDelay: "0.6s" }}>
+            Showcasing innovative projects and the brilliant minds behind cutting-edge technology solutions.
           </p>
           <button
-            onClick={() =>
-              document
-                .getElementById("projects-section")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-2 sm:py-3 md:py-4 lg:py-5 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer animate-fade-in-up"
+            onClick={() => document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" })}
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-xl sm:text-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer animate-fade-in-up"
             style={{ animationDelay: "0.8s" }}
           >
             Explore Our Projects
@@ -252,61 +234,57 @@ function MainComponent() {
       {/* Projects Section */}
       <section
         id="projects-section"
-        className="px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-12 sm:py-16 lg:py-20 xl:py-24 bg-white"
+        className="px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-24 bg-white"
       >
-        <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mb-3 sm:mb-4 lg:mb-6 animate-fade-in-up">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in-up">
             Our <span className="text-blue-600">Projects</span>
           </h2>
-          <p
-            className="text-gray-600 text-center mb-8 sm:mb-12 lg:mb-16 max-w-2xl xl:max-w-3xl mx-auto animate-fade-in-up px-2 sm:px-4 text-sm sm:text-base lg:text-lg xl:text-xl"
-            style={{ animationDelay: "0.2s" }}
-          >
-            Discover our innovative solutions in embedded systems, IoT
-            technology, and AI applications
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto animate-fade-in-up px-2 text-lg" style={{ animationDelay: "0.2s" }}>
+            Discover our innovative solutions in embedded systems, IoT technology, and AI applications
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {/* Project 1 */}
             <div
               className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.3s" }}
             >
-              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
+              <div className="h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
                     src="/a-photograph-of-a-sleek-futuristic-vehic_NYciPrjhTYWc8g3SJsMKSw_2Z81PH09QcOM-JbI5NVeTg.jpeg"
                     alt="Advance Vehicle Safety System"
-                    className="object-cover w-full h-full max-h-48 sm:max-h-56 md:max-h-64 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-300"
+                    className="object-cover w-full h-full max-h-56 sm:max-h-64 md:max-h-72 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-300"
                     style={{ maxWidth: '100%', maxHeight: '100%' }}
                   />
                 </div>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 lg:p-8">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300">
+              <div className="p-6">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 group-hover:text-blue-600 transition-colors duration-300">
                   Advance Vehicle Safety System
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base md:text-lg lg:text-xl">
                   Intelligent automotive safety system with real-time collision
                   detection, lane departure warnings, and emergency response
                   capabilities.
                 </p>
-                <div className="mb-3 sm:mb-4">
-                  <p className="text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                <div className="mb-4 sm:mb-5">
+                  <p className="text-sm sm:text-base font-medium text-gray-700 mb-2 sm:mb-3">
                     Technologies:
                   </p>
-                  <div className="flex flex-wrap gap-1 sm:gap-2">
-                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
+                  <div className="flex flex-wrap gap-2 sm:gap-3">
+                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
                       IoT Sensors
                     </span>
-                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
+                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
                       AI/ML
                     </span>
-                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
+                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
                       Real-time Processing
                     </span>
-                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
+                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
                       Emergency Response
                     </span>
                   </div>
@@ -315,7 +293,7 @@ function MainComponent() {
                   href="/projects/vehicle-safety"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 font-medium hover:text-blue-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-sm sm:text-base"
+                  className="text-blue-600 font-medium hover:text-blue-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-base sm:text-lg"
                 >
                   View Project
                   <i className="fas fa-external-link-alt ml-2 text-xs sm:text-sm"></i>
@@ -339,7 +317,7 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 lg:p-8">
+              <div className="p-6">
                 <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-purple-600 transition-colors duration-300">
                   IoT Based Hostel Access and Attendance Monitoring
                 </h3>
@@ -394,7 +372,7 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 lg:p-8">
+              <div className="p-6">
                 <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300">
                   AI-based Drone for Disaster Conditions
                 </h3>
@@ -440,26 +418,23 @@ function MainComponent() {
       {/* Team Section - Updated for single row on desktop */}
       <section
         id="team-section"
-        className="px-4 md:px-6 py-16 md:py-20 bg-blue-50"
+        className="px-4 py-12 sm:px-8 sm:py-16 bg-blue-50"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold animate-fade-in-up">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold animate-fade-in-up">
               Our <span className="text-purple-600">Team</span>
             </h2>
-            <p
-              className="text-gray-600 mt-4 max-w-2xl mx-auto animate-fade-in-up px-4"
-              style={{ animationDelay: "0.2s" }}
-            >
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto animate-fade-in-up px-4 text-lg" style={{ animationDelay: "0.2s" }}>
               Meet the brilliant minds driving innovation at Aaryavarta
             </p>
           </div>
 
           {/* Team Members Grid - Single row for desktop, stacked for mobile */}
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Team Member 1 - Mayur Patil */}
             <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 md:p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.3s" }}
             >
               <div className="mb-4 md:mb-6">
@@ -515,7 +490,7 @@ function MainComponent() {
 
             {/* Team Member 2 - Ganesh Wankhade */}
             <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 md:p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.5s" }}
             >
               <div className="mb-4 md:mb-6">
@@ -569,7 +544,7 @@ function MainComponent() {
 
             {/* Team Member 3 - Yash Dhake */}
             <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 md:p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.7s" }}
             >
               <div className="mb-4 md:mb-6">
@@ -627,35 +602,25 @@ function MainComponent() {
       {/* Contact Section */}
       <section
         id="contact-section"
-        className="px-4 md:px-6 py-16 md:py-20 bg-white"
+        className="px-4 py-12 sm:px-8 sm:py-16 bg-white"
       >
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold animate-fade-in-up">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold animate-fade-in-up">
               Get In <span className="text-blue-600">Touch</span>
             </h2>
-            <p
-              className="text-gray-600 mt-4 max-w-2xl mx-auto animate-fade-in-up px-4"
-              style={{ animationDelay: "0.2s" }}
-            >
-              Ready to collaborate or learn more about our projects? Send us a
-              message!
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto animate-fade-in-up px-4 text-lg" style={{ animationDelay: "0.2s" }}>
+              Ready to collaborate or learn more about our projects? Send us a message!
             </p>
-            <p
-              className="text-sm text-gray-500 mt-2 animate-fade-in-up"
-              style={{ animationDelay: "0.4s" }}
-            >
+            <p className="text-sm text-gray-500 mt-2 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
               Messages will be sent to: patilmayur987654321@gmail.com
             </p>
           </div>
 
-          <div
-            className="max-w-2xl mx-auto animate-fade-in-up"
-            style={{ animationDelay: "0.6s" }}
-          >
+          <div className="max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <form
               onSubmit={handleContactSubmit}
-              className="space-y-4 md:space-y-6"
+              className="space-y-6"
             >
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -667,7 +632,7 @@ function MainComponent() {
                   value={contactForm.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
                   placeholder="Your Name"
                 />
               </div>
@@ -682,7 +647,7 @@ function MainComponent() {
                   value={contactForm.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -697,7 +662,7 @@ function MainComponent() {
                   value={contactForm.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
                   placeholder="Project Inquiry"
                 />
               </div>
@@ -712,7 +677,7 @@ function MainComponent() {
                   onChange={handleInputChange}
                   rows="5"
                   required
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-300"
                   placeholder="Tell us about your project or inquiry..."
                 ></textarea>
               </div>
