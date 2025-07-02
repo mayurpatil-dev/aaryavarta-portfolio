@@ -825,9 +825,9 @@ function MainComponent() {
             <div className="text-center md:text-left">
               <h4 className="font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400 text-sm md:text-base">
-                <li>contact@aaryavarta.com</li>
-                <li>+91 98765 43210</li>
-                <li>Bangalore, India</li>
+                <li>contact@aaryavarta</li>
+                <li>+91 80106 22267</li>
+                <li>Maharashtra, India</li>
               </ul>
             </div>
           </div>

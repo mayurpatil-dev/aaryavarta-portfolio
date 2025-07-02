@@ -108,7 +108,7 @@ function MainComponent() {
                 <p className="text-gray-600 text-sm md:text-lg leading-relaxed mb-6 max-w-3xl">
                   Electronics & Telecommunication Engineer with expertise in embedded systems, sensor interfacing, and IoT development. Proficient in Python, Embedded C, and real-time automation using Raspberry Pi and Arduino. Fast learner with national-level achievements and a drive for hardware innovation.
                 </p>
-                <div className="flex flex-col sm:flex-row md:flex-row md:items-center gap-4 sm:gap-6 md:gap-8 w-full justify-center sm:justify-start">
+                <div className="flex flex-col sm:flex-row md:flex-row md:items-center gap-4 sm:gap-6 md:gap-8 w-full justify-center">
                   <a
                     href="/Mayur%20Patil_Resume%20Hardware.pdf"
                     download
@@ -446,12 +446,12 @@ function MainComponent() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <button className="text-blue-600 font-medium hover:text-blue-800 flex items-center justify-center sm:justify-start transition-all duration-300 hover:translate-x-2">
+                    <div className="flex flex-row gap-4 justify-center">
+                      <button className="text-blue-600 font-medium hover:text-blue-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fab fa-github mr-2"></i>
                         View Code
                       </button>
-                      <button className="text-blue-600 font-medium hover:text-blue-800 flex items-center justify-center sm:justify-start transition-all duration-300 hover:translate-x-2">
+                      <button className="text-blue-600 font-medium hover:text-blue-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fas fa-external-link-alt mr-2"></i>
                         Live Demo
                       </button>
@@ -524,12 +524,12 @@ function MainComponent() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <button className="text-purple-600 font-medium hover:text-purple-800 flex items-center justify-center sm:justify-start transition-all duration-300 hover:translate-x-2">
+                    <div className="flex flex-row gap-4 justify-center">
+                      <button className="text-purple-600 font-medium hover:text-purple-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fab fa-github mr-2"></i>
                         View Code
                       </button>
-                      <button className="text-purple-600 font-medium hover:text-purple-800 flex items-center justify-center sm:justify-start transition-all duration-300 hover:translate-x-2">
+                      <button className="text-purple-600 font-medium hover:text-purple-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fas fa-external-link-alt mr-2"></i>
                         Live Demo
                       </button>
@@ -602,12 +602,12 @@ function MainComponent() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <button className="text-gray-600 font-medium hover:text-gray-800 flex items-center justify-center sm:justify-start transition-all duration-300 hover:translate-x-2">
+                    <div className="flex flex-row gap-4 justify-center">
+                      <button className="text-gray-600 font-medium hover:text-gray-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fab fa-github mr-2"></i>
                         View Code
                       </button>
-                      <button className="text-gray-600 font-medium hover:text-gray-800 flex items-center justify-center sm:justify-start transition-all duration-300 hover:translate-x-2">
+                      <button className="text-gray-600 font-medium hover:text-gray-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fas fa-external-link-alt mr-2"></i>
                         Live Demo
                       </button>
