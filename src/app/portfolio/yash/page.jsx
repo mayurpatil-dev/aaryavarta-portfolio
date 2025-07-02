@@ -82,9 +82,11 @@ function MainComponent() {
       <section className="px-4 md:px-6 py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fade-in-up">
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center mx-auto mb-6 border-4 border-orange-200 hover:scale-110 hover:border-orange-400 transition-all duration-300 group">
-              <i className="fas fa-user text-3xl md:text-5xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-            </div>
+            <img
+              src="/yash.jpg"
+              alt="Yash Dhake"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mx-auto mb-6 border-4 border-orange-200 hover:scale-110 hover:border-orange-400 transition-all duration-300 group"
+            />
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
               Yash{" "}
               <span className="text-orange-600 animate-gradient-text">

@@ -479,6 +479,9 @@ function MainComponent() {
                     <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-purple-200 transition-colors duration-200">
                       System Architecture
                     </span>
+                    <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-purple-200 transition-colors duration-200">
+                      PCB Designing
+                    </span>
                   </div>
                 </div>
 
@@ -530,10 +533,10 @@ function MainComponent() {
                       Hardware Design
                     </span>
                     <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-purple-200 transition-colors duration-200">
-                      System Integration
+                      Networking
                     </span>
                     <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium hover:bg-purple-200 transition-colors duration-200">
-                      Performance Optimization
+                      Cyber Security
                     </span>
                   </div>
                 </div>
@@ -556,9 +559,11 @@ function MainComponent() {
               style={{ animationDelay: "0.7s" }}
             >
               <div className="mb-4 md:mb-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center border-4 border-blue-200 mx-auto group-hover:border-blue-400 transition-all duration-300 group-hover:scale-110">
-                  <i className="fas fa-user text-2xl md:text-3xl text-white"></i>
-                </div>
+                <img
+                  src="/yash.jpg"
+                  alt="Yash Dhake"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-blue-200 mx-auto group-hover:border-blue-400 transition-all duration-300 group-hover:scale-110"
+                />
               </div>
               <div>
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
