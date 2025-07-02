@@ -85,7 +85,7 @@ function MainComponent() {
       )}
 
       {/* Fixed Navigation with Hamburger Menu */}
-      <nav className="fixed top-0 left-0 right-0 bg-transparent shadow-sm px-4 sm:px-6 lg:px-8 py-2 sm:py-3 z-50 backdrop-blur-md min-h-[48px] sm:min-h-[56px] lg:min-h-[64px]">
+      <nav className="fixed top-0 left-0 right-0 bg-transparent shadow-sm px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-1 z-50 backdrop-blur-md min-h-[48px] sm:min-h-[56px] lg:min-h-[44px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo Image for Aaryavarta */}
           <div className="flex items-center gap-2 select-none animate-slide-in-left w-auto justify-start">
@@ -212,7 +212,7 @@ function MainComponent() {
       </nav>
 
       {/* Hero Section - Enhanced for all devices */}
-      <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 text-center relative overflow-hidden">
+      <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 lg:pt-40 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-10 animate-fade-in-up">
