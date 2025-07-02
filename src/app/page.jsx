@@ -88,12 +88,12 @@ function MainComponent() {
       <nav className="fixed top-0 left-0 right-0 bg-transparent shadow-sm px-4 sm:px-6 lg:px-8 py-2 sm:py-3 z-50 backdrop-blur-md min-h-[48px] sm:min-h-[56px] lg:min-h-[64px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo Image for Aaryavarta */}
-          <div className="flex items-center gap-2 select-none animate-slide-in-left w-full lg:w-auto justify-center lg:justify-start">
+          <div className="flex items-center gap-2 select-none animate-slide-in-left w-auto justify-start">
             <img
               src="/aaryvarta_logo-removebg.png"
               alt="Aaryavarta Logo"
-              className="h-8 sm:h-10 lg:h-12 w-auto object-contain drop-shadow-[0_2px_8px_rgba(80,80,255,0.15)]"
-              style={{ maxWidth: '160px' }}
+              className="h-12 sm:h-14 lg:h-16 w-auto object-contain drop-shadow-[0_2px_8px_rgba(80,80,255,0.15)]"
+              style={{ maxWidth: '220px' }}
             />
           </div>
 
