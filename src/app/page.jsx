@@ -87,7 +87,11 @@ function MainComponent() {
       {/* Fixed Navigation with Hamburger Menu */}
       <nav className="fixed top-0 left-0 right-0 bg-transparent shadow-sm px-4 sm:px-6 lg:px-8 py-3 sm:py-4 z-50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-blue-600 animate-slide-in-left">
+          {/* Stylized Gradient Logo */}
+          <div
+            className="font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl select-none transition-all duration-300 animate-slide-in-left bg-gradient-to-r from-blue-500 via-violet-500 via-60% to-orange-400 to-90% to-white bg-clip-text text-transparent font-[Poppins,sans-serif] text-center lg:text-left cursor-pointer hover:brightness-125 hover:drop-shadow-[0_2px_8px_rgba(255,255,255,0.5)]"
+            style={{ fontFamily: 'Poppins, Nunito, Inter, sans-serif' }}
+          >
             Aaryavarta
           </div>
 
