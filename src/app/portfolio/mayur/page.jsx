@@ -446,7 +446,7 @@ function MainComponent() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-row gap-4 justify-center">
+                    <div className="flex flex-row gap-4 justify-center md:justify-start">
                       <button className="text-blue-600 font-medium hover:text-blue-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fab fa-github mr-2"></i>
                         View Code
@@ -524,7 +524,7 @@ function MainComponent() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-row gap-4 justify-center">
+                    <div className="flex flex-row gap-4 justify-center md:justify-start">
                       <button className="text-purple-600 font-medium hover:text-purple-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fab fa-github mr-2"></i>
                         View Code
@@ -602,7 +602,7 @@ function MainComponent() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-row gap-4 justify-center">
+                    <div className="flex flex-row gap-4 justify-center md:justify-start">
                       <button className="text-gray-600 font-medium hover:text-gray-800 flex items-center justify-center transition-all duration-300 hover:translate-x-2">
                         <i className="fab fa-github mr-2"></i>
                         View Code
