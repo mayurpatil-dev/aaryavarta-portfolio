@@ -85,7 +85,7 @@ function MainComponent() {
       )}
 
       {/* Fixed Navigation with Hamburger Menu */}
-      <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm px-4 sm:px-6 lg:px-8 py-3 sm:py-4 z-50 backdrop-blur-sm bg-white/95">
+      <nav className="fixed top-0 left-0 right-0 bg-transparent shadow-sm px-4 sm:px-6 lg:px-8 py-3 sm:py-4 z-50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-blue-600 animate-slide-in-left">
             Aaryavarta
@@ -209,21 +209,21 @@ function MainComponent() {
       <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-5xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 animate-fade-in-up">
+          <h1 className="text-6xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-10 animate-fade-in-up">
             Welcome to <span className="text-blue-600 animate-gradient-text">Aaryavarta</span>
           </h1>
-          <p className="text-xl sm:text-lg lg:text-xl text-gray-600 italic mb-4 animate-fade-in-up px-2" style={{ animationDelay: "0.2s" }}>
+          <p className="text-2xl sm:text-xl lg:text-2xl text-gray-600 italic mb-6 animate-fade-in-up px-2" style={{ animationDelay: "0.2s" }}>
             "Dream is not that which you see while sleeping, it is something that does not let you sleep."
           </p>
-          <p className="text-blue-600 font-medium mb-8 text-xl sm:text-lg lg:text-xl animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <p className="text-blue-600 font-medium mb-10 text-2xl sm:text-xl lg:text-2xl animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             — Dr. A.P.J. Abdul Kalam
           </p>
-          <p className="text-lg sm:text-base lg:text-lg text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in-up px-2" style={{ animationDelay: "0.6s" }}>
+          <p className="text-xl sm:text-lg lg:text-xl text-gray-600 mb-12 max-w-2xl mx-auto animate-fade-in-up px-2" style={{ animationDelay: "0.6s" }}>
             Showcasing innovative projects and the brilliant minds behind cutting-edge technology solutions.
           </p>
           <button
             onClick={() => document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" })}
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-xl sm:text-lg lg:text-xl font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer animate-fade-in-up"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-10 py-5 rounded-full text-2xl sm:text-xl lg:text-2xl font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer animate-fade-in-up"
             style={{ animationDelay: "0.8s" }}
           >
             Explore Our Projects
