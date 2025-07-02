@@ -184,7 +184,11 @@ function MainComponent() {
             >
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-purple-400 to-blue-500 flex items-center justify-center shadow-2xl hover:scale-105 transition-transform duration-500">
-                  <i className="fas fa-microchip text-6xl md:text-8xl text-white"></i>
+                  <img
+                    src="/ganesh.jpg"
+                    alt="Ganesh Wankhade"
+                    className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-purple-300 shadow-xl"
+                  />
                 </div>
                 <div className="absolute -top-4 -right-4 w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg animate-bounce-slow">
                   <i className="fas fa-code text-xl md:text-2xl text-white"></i>

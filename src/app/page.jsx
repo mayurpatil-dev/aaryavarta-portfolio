@@ -500,9 +500,11 @@ function MainComponent() {
               style={{ animationDelay: "0.5s" }}
             >
               <div className="mb-4 md:mb-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-purple-400 to-blue-500 flex items-center justify-center border-4 border-purple-200 mx-auto group-hover:border-purple-400 transition-all duration-300 group-hover:scale-110">
-                  <i className="fas fa-user text-2xl md:text-3xl text-white"></i>
-                </div>
+                <img
+                  src="/ganesh.jpg"
+                  alt="Ganesh Wankhade"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-purple-200 mx-auto group-hover:border-purple-400 transition-all duration-300 group-hover:scale-110"
+                />
               </div>
               <div>
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
