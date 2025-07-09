@@ -212,7 +212,7 @@ function MainComponent() {
       </nav>
 
       {/* Hero Section - Enhanced for all devices */}
-      <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 lg:pt-32 text-center relative overflow-hidden">
+      <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 lg:pt-32 2xl:px-32 2xl:py-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-10 animate-fade-in-up">
@@ -240,9 +240,9 @@ function MainComponent() {
       {/* Projects Section */}
       <section
         id="projects-section"
-        className="px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-24 bg-white"
+        className="px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-24 2xl:px-32 2xl:py-32 bg-white"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full max-w-7xl 2xl:max-w-none 2xl:px-0 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in-up">
             Our <span className="text-blue-600">Projects</span>
           </h2>
@@ -424,9 +424,9 @@ function MainComponent() {
       {/* Team Section - Updated for single row on desktop */}
       <section
         id="team-section"
-        className="px-4 py-12 sm:px-8 sm:py-16 bg-blue-50"
+        className="px-4 py-12 sm:px-8 sm:py-16 2xl:px-32 2xl:py-32 bg-blue-50"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full max-w-7xl 2xl:max-w-none 2xl:px-0 mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold animate-fade-in-up">
               Our <span className="text-purple-600">Team</span>
@@ -615,9 +615,9 @@ function MainComponent() {
       {/* Contact Section */}
       <section
         id="contact-section"
-        className="px-4 py-12 sm:px-8 sm:py-16 bg-white"
+        className="px-4 py-12 sm:px-8 sm:py-16 2xl:px-32 2xl:py-32 bg-white"
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="w-full max-w-4xl 2xl:max-w-none 2xl:px-0 mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold animate-fade-in-up">
               Get In <span className="text-blue-600">Touch</span>
@@ -721,8 +721,8 @@ function MainComponent() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white px-4 md:px-6 py-8 md:py-12">
-        <div className="max-w-7xl mx-auto">
+      <footer className="bg-gray-900 text-white px-4 md:px-6 py-8 md:py-12 2xl:px-32 2xl:py-20">
+        <div className="w-full max-w-7xl 2xl:max-w-none 2xl:px-0 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
             <div className="text-center md:text-left">
               <div className="text-xl md:text-2xl font-bold text-blue-400 mb-4">
