@@ -88,7 +88,7 @@ function MainComponent() {
               <p className="text-gray-700 mb-2">
                 This project presents a humane mouse deterrence device using a Light Dependent Resistor (LDR) to detect rodent presence and trigger a gentle poking mechanism. Ideal for homes, storage, and food facilities.
               </p>
-              <img src="/public/aaryvarta_logo-removebg-2.png" alt="Mouse Poking Device" className="w-full max-w-md mx-auto rounded-lg shadow my-4" />
+              <img src="/mouse.jpeg" alt="Mouse Poking Device" className="w-full max-w-md mx-auto rounded-lg shadow my-4" />
             </div>
           )}
           {activeSection === "features" && (
