@@ -427,7 +427,7 @@ function MainComponent() {
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
-                    src="/public/passphoto-new.png"
+                    src="/otp-based-home-door-lock-system-esp8266-_a7MfYoVqQ7KyTAC1WUDPvg_Vl_FzxiMSbKSnpcQ4CGIzQ.jpeg"
                     alt="OTP Based Home Door Lock System"
                     className="object-cover w-full h-full max-h-48 sm:max-h-56 md:max-h-64 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-300"
                     style={{ maxWidth: '100%', maxHeight: '100%' }}

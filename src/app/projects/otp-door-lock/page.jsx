@@ -89,7 +89,7 @@ function MainComponent() {
               <p className="text-gray-700 mb-2">
                 This project implements a secure, IoT-enabled home door lock system using the ESP8266 microcontroller and Twilio's OTP service. Users receive a one-time password (OTP) via SMS to unlock their door, ensuring only authorized access.
               </p>
-              <img src="/public/passphoto-new.png" alt="OTP Door Lock" className="w-full max-w-md mx-auto rounded-lg shadow my-4" />
+              <img src="/otp-based-home-door-lock-system-esp8266-_a7MfYoVqQ7KyTAC1WUDPvg_Vl_FzxiMSbKSnpcQ4CGIzQ.jpeg" alt="OTP Door Lock" className="w-full max-w-md mx-auto rounded-lg shadow my-4" />
             </div>
           )}
           {activeSection === "features" && (
