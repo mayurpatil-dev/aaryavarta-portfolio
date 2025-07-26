@@ -461,7 +461,9 @@ function MainComponent() {
                   </div>
                 </div>
                 <a
-                  href="#"
+                  href="/projects/otp-door-lock"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-green-600 font-medium hover:text-green-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-sm sm:text-base"
                 >
                   View Project
@@ -510,7 +512,9 @@ function MainComponent() {
                   </div>
                 </div>
                 <a
-                  href="#"
+                  href="/projects/mouse-poking-device"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-yellow-600 font-medium hover:text-yellow-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-sm sm:text-base"
                 >
                   View Project
