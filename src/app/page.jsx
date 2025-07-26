@@ -417,6 +417,107 @@ function MainComponent() {
                 </a>
               </div>
             </div>
+
+            {/* Project 4 - OTP Based Home Door Lock System */}
+            <div
+              className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              style={{ animationDelay: "0.9s" }}
+            >
+              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-green-400 to-blue-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img
+                    src="/public/passphoto-new.png"
+                    alt="OTP Based Home Door Lock System"
+                    className="object-cover w-full h-full max-h-48 sm:max-h-56 md:max-h-64 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-300"
+                    style={{ maxWidth: '100%', maxHeight: '100%' }}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-green-600 transition-colors duration-300">
+                  OTP Based Home Door Lock System (ESP8266 + Twilio OTP)
+                </h3>
+                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                  Secure your home with an IoT-enabled door lock system using ESP8266 and Twilio for OTP-based authentication. Remotely control and monitor access with real-time OTP verification.
+                </p>
+                <div className="mb-3 sm:mb-4">
+                  <p className="text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                    Technologies:
+                  </p>
+                  <div className="flex flex-wrap gap-1 sm:gap-2">
+                    <span className="bg-green-100 text-green-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-green-200 transition-colors duration-200">
+                      ESP8266
+                    </span>
+                    <span className="bg-green-100 text-green-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-green-200 transition-colors duration-200">
+                      Twilio OTP
+                    </span>
+                    <span className="bg-green-100 text-green-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-green-200 transition-colors duration-200">
+                      IoT
+                    </span>
+                    <span className="bg-green-100 text-green-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-green-200 transition-colors duration-200">
+                      Home Automation
+                    </span>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  className="text-green-600 font-medium hover:text-green-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-sm sm:text-base"
+                >
+                  View Project
+                  <i className="fas fa-external-link-alt ml-2 text-xs sm:text-sm"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Project 5 - Mouse Poking Device Using LDR */}
+            <div
+              className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              style={{ animationDelay: "1.1s" }}
+            >
+              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-yellow-400 to-gray-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img
+                    src="/public/aaryvarta_logo-removebg-2.png"
+                    alt="Mouse Poking Device Using LDR"
+                    className="object-cover w-full h-full max-h-48 sm:max-h-56 md:max-h-64 rounded-lg shadow-md group-hover:scale-110 transition-transform duration-300"
+                    style={{ maxWidth: '100%', maxHeight: '100%' }}
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-yellow-600 transition-colors duration-300">
+                  Mouse Poking Device Using LDR
+                </h3>
+                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                  An innovative device that uses a Light Dependent Resistor (LDR) to detect mouse presence and trigger a poking mechanism. Ideal for humane rodent deterrence in homes and storage areas.
+                </p>
+                <div className="mb-3 sm:mb-4">
+                  <p className="text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+                    Technologies:
+                  </p>
+                  <div className="flex flex-wrap gap-1 sm:gap-2">
+                    <span className="bg-yellow-100 text-yellow-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-yellow-200 transition-colors duration-200">
+                      LDR Sensor
+                    </span>
+                    <span className="bg-yellow-100 text-yellow-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-yellow-200 transition-colors duration-200">
+                      Embedded Systems
+                    </span>
+                    <span className="bg-yellow-100 text-yellow-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-yellow-200 transition-colors duration-200">
+                      Automation
+                    </span>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  className="text-yellow-600 font-medium hover:text-yellow-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-sm sm:text-base"
+                >
+                  View Project
+                  <i className="fas fa-external-link-alt ml-2 text-xs sm:text-sm"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -817,6 +918,22 @@ function MainComponent() {
                     className="hover:text-white transition-all duration-300 hover:translate-x-2"
                   >
                     Disaster Response Drone
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-all duration-300 hover:translate-x-2"
+                  >
+                    OTP Door Lock System
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-all duration-300 hover:translate-x-2"
+                  >
+                    Mouse Poking Device
                   </a>
                 </li>
               </ul>
