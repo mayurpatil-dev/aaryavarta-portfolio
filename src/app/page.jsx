@@ -215,21 +215,21 @@ function MainComponent() {
       <section className="min-h-[80vh] sm:min-h-[70vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-10 sm:py-16 lg:px-12 lg:py-24 pt-24 sm:pt-32 lg:pt-32 2xl:px-32 2xl:py-32 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-10 animate-fade-in-up">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 animate-fade-in-up">
             Welcome to <span className="text-blue-600 animate-gradient-text">Aaryavarta</span>
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 italic mb-6 animate-fade-in-up px-2" style={{ animationDelay: "0.2s" }}>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 italic mb-4 animate-fade-in-up px-2" style={{ animationDelay: "0.2s" }}>
             "Dream is not that which you see while sleeping, it is something that does not let you sleep."
           </p>
-          <p className="text-blue-600 font-medium mb-10 text-lg sm:text-xl lg:text-2xl animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <p className="text-blue-600 font-medium mb-8 text-base sm:text-lg lg:text-xl animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             — Dr. A.P.J. Abdul Kalam
           </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-12 max-w-2xl mx-auto animate-fade-in-up px-2" style={{ animationDelay: "0.6s" }}>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in-up px-2" style={{ animationDelay: "0.6s" }}>
             Showcasing innovative projects and the brilliant minds behind cutting-edge technology solutions.
           </p>
           <button
             onClick={() => document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" })}
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg sm:text-xl lg:text-2xl font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer animate-fade-in-up"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer animate-fade-in-up"
             style={{ animationDelay: "0.8s" }}
           >
             Explore Our Projects
@@ -243,20 +243,20 @@ function MainComponent() {
         className="px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-24 2xl:px-32 2xl:py-32 bg-white"
       >
         <div className="w-full max-w-7xl 2xl:max-w-none 2xl:px-0 mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in-up">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 animate-fade-in-up">
             Our <span className="text-blue-600">Projects</span>
           </h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto animate-fade-in-up px-2 text-lg" style={{ animationDelay: "0.2s" }}>
+          <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto animate-fade-in-up px-2 text-base sm:text-lg" style={{ animationDelay: "0.2s" }}>
             Discover our innovative solutions in embedded systems, IoT technology, and AI applications
           </p>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* Project 1 */}
             <div
               className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.3s" }}
             >
-              <div className="h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
+              <div className="h-32 sm:h-36 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
@@ -267,30 +267,30 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 group-hover:text-blue-600 transition-colors duration-300">
+              <div className="p-4 sm:p-5">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300">
                   Advance Vehicle Safety System
                 </h3>
-                <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base md:text-lg lg:text-xl">
+                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
                   Intelligent automotive safety system with real-time collision
                   detection, lane departure warnings, and emergency response
                   capabilities.
                 </p>
-                <div className="mb-4 sm:mb-5">
-                  <p className="text-sm sm:text-base font-medium text-gray-700 mb-2 sm:mb-3">
+                <div className="mb-3 sm:mb-4">
+                  <p className="text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Technologies:
                   </p>
-                  <div className="flex flex-wrap gap-2 sm:gap-3">
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
+                  <div className="flex flex-wrap gap-1 sm:gap-2">
+                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
                       IoT Sensors
                     </span>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
+                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
                       AI/ML
                     </span>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
+                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
                       Real-time Processing
                     </span>
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm hover:bg-blue-200 transition-colors duration-200">
+                    <span className="bg-blue-100 text-blue-800 px-1 sm:px-2 py-1 rounded text-xs hover:bg-blue-200 transition-colors duration-200">
                       Emergency Response
                     </span>
                   </div>
@@ -299,7 +299,7 @@ function MainComponent() {
                   href="/projects/vehicle-safety"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 font-medium hover:text-blue-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-base sm:text-lg"
+                  className="text-blue-600 font-medium hover:text-blue-800 transition-all duration-300 group-hover:translate-x-2 flex items-center text-sm sm:text-base"
                 >
                   View Project
                   <i className="fas fa-external-link-alt ml-2 text-xs sm:text-sm"></i>
@@ -312,7 +312,7 @@ function MainComponent() {
               className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.5s" }}
             >
-              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-purple-400 to-pink-600 relative overflow-hidden">
+              <div className="h-32 sm:h-36 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-br from-purple-400 to-pink-600 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
@@ -323,8 +323,8 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-purple-600 transition-colors duration-300">
+              <div className="p-4 sm:p-5">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-3 group-hover:text-purple-600 transition-colors duration-300">
                   IoT Based Hostel Access and Attendance Monitoring
                 </h3>
                 <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
@@ -367,7 +367,7 @@ function MainComponent() {
               className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.7s" }}
             >
-              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-gray-400 to-blue-500 relative overflow-hidden">
+              <div className="h-32 sm:h-36 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-br from-gray-400 to-blue-500 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
@@ -378,8 +378,8 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300">
+              <div className="p-4 sm:p-5">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300">
                   AI-based Drone for Disaster Conditions
                 </h3>
                 <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
@@ -423,7 +423,7 @@ function MainComponent() {
               className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.9s" }}
             >
-              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-green-400 to-blue-600 relative overflow-hidden">
+              <div className="h-32 sm:h-36 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-br from-green-400 to-blue-600 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
@@ -434,8 +434,8 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-green-600 transition-colors duration-300">
+              <div className="p-4 sm:p-5">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-3 group-hover:text-green-600 transition-colors duration-300">
                   OTP Based Home Door Lock System (ESP8266 + Twilio OTP)
                 </h3>
                 <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
@@ -477,7 +477,7 @@ function MainComponent() {
               className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "1.1s" }}
             >
-              <div className="h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 bg-gradient-to-br from-yellow-400 to-gray-600 relative overflow-hidden">
+              <div className="h-32 sm:h-36 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-br from-yellow-400 to-gray-600 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
@@ -488,8 +488,8 @@ function MainComponent() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-yellow-600 transition-colors duration-300">
+              <div className="p-4 sm:p-5">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-3 group-hover:text-yellow-600 transition-colors duration-300">
                   Mouse Poking Device Using LDR
                 </h3>
                 <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
@@ -532,42 +532,42 @@ function MainComponent() {
         className="px-4 py-12 sm:px-8 sm:py-16 2xl:px-32 2xl:py-32 bg-blue-50"
       >
         <div className="w-full max-w-7xl 2xl:max-w-none 2xl:px-0 mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold animate-fade-in-up">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold animate-fade-in-up">
               Our <span className="text-purple-600">Team</span>
             </h2>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto animate-fade-in-up px-4 text-lg" style={{ animationDelay: "0.2s" }}>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto animate-fade-in-up px-4 text-base sm:text-lg" style={{ animationDelay: "0.2s" }}>
               Meet the brilliant minds driving innovation at Aaryavarta
             </p>
           </div>
 
           {/* Team Members Grid - Single row for desktop, stacked for mobile */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {/* Team Member 1 - Mayur Patil */}
             <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.3s" }}
             >
-              <div className="mb-4 md:mb-6">
+              <div className="mb-4 md:mb-5">
                 <img
                   src="/passphoto-new.png"
                   alt="Mayur Patil"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-blue-200 mx-auto group-hover:border-blue-400 transition-all duration-300 group-hover:scale-110"
+                  className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-blue-200 mx-auto group-hover:border-blue-400 transition-all duration-300 group-hover:scale-110"
                 />
               </div>
               <div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-base md:text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   Mayur Patil
                 </h3>
                 <p className="text-purple-600 font-medium mb-3 md:mb-4 text-sm md:text-base">
                   Group Leader | Embedded & IoT Developer
                 </p>
-                <p className="text-gray-600 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-gray-600 text-xs md:text-sm mb-4 md:mb-5 leading-relaxed">
                   Passionate about creating innovative IoT solutions and leading
                   development teams to build cutting-edge embedded systems.
                 </p>
 
-                <div className="mb-4 md:mb-6">
+                <div className="mb-4 md:mb-5">
                   <p className="text-xs md:text-sm font-medium text-gray-700 mb-2 md:mb-3">
                     Skills:
                   </p>
@@ -604,29 +604,29 @@ function MainComponent() {
 
             {/* Team Member 2 - Ganesh Wankhade */}
             <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.5s" }}
             >
-              <div className="mb-4 md:mb-6">
+              <div className="mb-4 md:mb-5">
                 <img
                   src="/ganesh.jpg"
                   alt="Ganesh Wankhade"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-purple-200 mx-auto group-hover:border-purple-400 transition-all duration-300 group-hover:scale-110"
+                  className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-purple-200 mx-auto group-hover:border-purple-400 transition-all duration-300 group-hover:scale-110"
                 />
               </div>
               <div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+                <h3 className="text-base md:text-lg font-bold mb-2 text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
                   Ganesh Wankhade
                 </h3>
                 <p className="text-purple-600 font-medium mb-3 md:mb-4 text-sm md:text-base">
                   Embedded System Specialist
                 </p>
-                <p className="text-gray-600 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-gray-600 text-xs md:text-sm mb-4 md:mb-5 leading-relaxed">
                   Expert in embedded system design and implementation with focus
                   on hardware-software integration and optimization.
                 </p>
 
-                <div className="mb-4 md:mb-6">
+                <div className="mb-4 md:mb-5">
                   <p className="text-xs md:text-sm font-medium text-gray-700 mb-2 md:mb-3">
                     Skills:
                   </p>
@@ -660,29 +660,29 @@ function MainComponent() {
 
             {/* Team Member 3 - Yash Dhake */}
             <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 text-center animate-fade-in-up hover:shadow-2xl hover:scale-105 transition-all duration-500 group"
               style={{ animationDelay: "0.7s" }}
             >
-              <div className="mb-4 md:mb-6">
+              <div className="mb-4 md:mb-5">
                 <img
                   src="/yash.jpg"
                   alt="Yash Dhake"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-blue-200 mx-auto group-hover:border-blue-400 transition-all duration-300 group-hover:scale-110"
+                  className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-blue-200 mx-auto group-hover:border-blue-400 transition-all duration-300 group-hover:scale-110"
                 />
               </div>
               <div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-base md:text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   Yash Dhake
                 </h3>
                 <p className="text-purple-600 font-medium mb-3 md:mb-4 text-sm md:text-base">
                   Embedded System | Document Maker
                 </p>
-                <p className="text-gray-600 text-xs md:text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-gray-600 text-xs md:text-sm mb-4 md:mb-5 leading-relaxed">
                   Specialized in embedded systems development and technical
                   documentation, ensuring project clarity and maintainability.
                 </p>
 
-                <div className="mb-4 md:mb-6">
+                <div className="mb-4 md:mb-5">
                   <p className="text-xs md:text-sm font-medium text-gray-700 mb-2 md:mb-3">
                     Skills:
                   </p>
@@ -723,11 +723,11 @@ function MainComponent() {
         className="px-4 py-12 sm:px-8 sm:py-16 2xl:px-32 2xl:py-32 bg-white"
       >
         <div className="w-full max-w-4xl 2xl:max-w-none 2xl:px-0 mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold animate-fade-in-up">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold animate-fade-in-up">
               Get In <span className="text-blue-600">Touch</span>
             </h2>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto animate-fade-in-up px-4 text-lg" style={{ animationDelay: "0.2s" }}>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto animate-fade-in-up px-4 text-base sm:text-lg" style={{ animationDelay: "0.2s" }}>
               Ready to collaborate or learn more about our projects? Send us a message!
             </p>
             <p className="text-sm text-gray-500 mt-2 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
