@@ -67,50 +67,50 @@ function MainComponent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0C0E] text-neutral-200 font-sans selection:bg-amber-500/30 selection:text-amber-200">
+    <div className="min-h-screen bg-blue-50 text-zinc-900 font-sans selection:bg-amber-500/20 selection:text-amber-900">
       {/* Success Popup */}
       {showSuccessPopup && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[100] animate-fade-in backdrop-blur-sm">
-          <div className="bg-[#121316] border border-neutral-800 rounded-2xl p-8 max-w-md mx-4 text-center animate-scale-in shadow-[0_0_50px_rgba(16,185,129,0.15)]">
-            <div className="w-16 h-16 bg-emerald-500/10 border border-emerald-500/30 rounded-full flex items-center justify-center mx-auto mb-4">
-              <i className="fas fa-check text-emerald-500 text-2xl"></i>
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[100] animate-fade-in backdrop-blur-sm">
+          <div className="bg-white border border-zinc-200 rounded-2xl p-8 max-w-md mx-4 text-center animate-scale-in shadow-[0_15px_40px_rgba(0,0,0,0.12)]">
+            <div className="w-16 h-16 bg-emerald-50 border border-emerald-200 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i className="fas fa-check text-emerald-600 text-2xl"></i>
             </div>
-            <h3 className="text-2xl font-mono font-bold text-zinc-100 mb-2">
-              [ TRANSMISSION_COMPLETE ]
+            <h3 className="text-xl font-bold text-zinc-950 mb-2">
+              Message Sent!
             </h3>
-            <p className="text-zinc-400 mb-6 text-sm">
-              Thank you for contacting Aaryavarta. Your service inquiry has been received. We will respond within 24–48 hours.
+            <p className="text-zinc-600 mb-6 text-sm">
+              Thank you for contacting Aaryavarta. Your service inquiry has been received. We typically respond within 24 to 48 hours.
             </p>
             <button
               onClick={() => setShowSuccessPopup(false)}
-              className="bg-amber-500 hover:bg-amber-600 text-neutral-950 font-mono font-bold px-6 py-3 rounded-lg transition-all duration-300 w-full"
+              className="bg-amber-500 hover:bg-amber-600 text-neutral-900 font-bold px-6 py-3 rounded-lg transition-all duration-300 w-full"
             >
-              [ DISMISS ]
+              Dismiss
             </button>
           </div>
         </div>
       )}
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-[#0B0C0E]/85 shadow-md px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-1 z-50 backdrop-blur-md border-b border-neutral-800/80 min-h-[48px] sm:min-h-[56px] lg:min-h-[64px]">
+      <nav className="fixed top-0 left-0 right-0 bg-white/80 shadow-sm px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-1 z-50 backdrop-blur-md border-b border-zinc-200/80 min-h-[48px] sm:min-h-[56px] lg:min-h-[64px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
           {/* Logo */}
           <div className="flex items-center gap-2 select-none animate-slide-in-left w-auto justify-start cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <img
               src="/aaryvarta_logo-removebg-2.png"
               alt="Aaryavarta Logo"
-              className="h-9 sm:h-12 lg:h-14 w-auto object-contain brightness-110 drop-shadow-[0_0_10px_rgba(245,158,11,0.2)]"
+              className="h-9 sm:h-12 lg:h-14 w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
               style={{ maxWidth: '180px' }}
             />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-6 xl:space-x-8 font-mono text-sm tracking-wide">
+          <div className="hidden lg:flex space-x-6 xl:space-x-8 font-mono text-sm tracking-wide font-medium">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="text-zinc-400 hover:text-amber-500 transition-all duration-300 relative group py-2"
+              className="text-zinc-600 hover:text-amber-600 transition-all duration-300 relative group py-2"
             >
-              [ HOME ]
+              HOME
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
@@ -119,9 +119,9 @@ function MainComponent() {
                   .getElementById("services-section")
                   .scrollIntoView({ behavior: "smooth" })
               }
-              className="text-zinc-400 hover:text-amber-500 transition-all duration-300 relative group py-2"
+              className="text-zinc-600 hover:text-amber-600 transition-all duration-300 relative group py-2"
             >
-              [ SERVICES ]
+              SERVICES
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
@@ -130,9 +130,9 @@ function MainComponent() {
                   .getElementById("work-section")
                   .scrollIntoView({ behavior: "smooth" })
               }
-              className="text-zinc-400 hover:text-amber-500 transition-all duration-300 relative group py-2"
+              className="text-zinc-600 hover:text-amber-600 transition-all duration-300 relative group py-2"
             >
-              [ WORK ]
+              WORK
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
@@ -141,9 +141,9 @@ function MainComponent() {
                   .getElementById("about-section")
                   .scrollIntoView({ behavior: "smooth" })
               }
-              className="text-zinc-400 hover:text-amber-500 transition-all duration-300 relative group py-2"
+              className="text-zinc-600 hover:text-amber-600 transition-all duration-300 relative group py-2"
             >
-              [ ABOUT ]
+              ABOUT
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
@@ -152,9 +152,9 @@ function MainComponent() {
                   .getElementById("contact-section")
                   .scrollIntoView({ behavior: "smooth" })
               }
-              className="text-zinc-400 hover:text-amber-500 transition-all duration-300 relative group py-2"
+              className="text-zinc-600 hover:text-amber-600 transition-all duration-300 relative group py-2"
             >
-              [ CONTACT ]
+              CONTACT
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
             </button>
           </div>
@@ -162,7 +162,7 @@ function MainComponent() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-zinc-400 hover:text-amber-500 transition-all duration-300 p-2"
+            className="lg:hidden text-zinc-600 hover:text-amber-600 transition-all duration-300 p-2"
           >
             <i
               className={`fas ${
@@ -174,7 +174,7 @@ function MainComponent() {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 bg-[#0B0C0E]/95 border-b border-neutral-800 ${
+          className={`lg:hidden overflow-hidden transition-all duration-300 bg-white border-b border-zinc-200 ${
             isMobileMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
@@ -185,9 +185,9 @@ function MainComponent() {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-zinc-400 hover:text-amber-500 transition-all duration-300 text-left py-2 px-3 hover:bg-neutral-900 rounded"
+                className="text-zinc-600 hover:text-amber-600 transition-all duration-300 text-left py-2 px-3 hover:bg-zinc-50 rounded"
               >
-                [ HOME ]
+                HOME
               </button>
               <button
                 onClick={() => {
@@ -196,9 +196,9 @@ function MainComponent() {
                     .scrollIntoView({ behavior: "smooth" });
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-zinc-400 hover:text-amber-500 transition-all duration-300 text-left py-2 px-3 hover:bg-neutral-900 rounded"
+                className="text-zinc-600 hover:text-amber-600 transition-all duration-300 text-left py-2 px-3 hover:bg-zinc-50 rounded"
               >
-                [ SERVICES ]
+                SERVICES
               </button>
               <button
                 onClick={() => {
@@ -207,9 +207,9 @@ function MainComponent() {
                     .scrollIntoView({ behavior: "smooth" });
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-zinc-400 hover:text-amber-500 transition-all duration-300 text-left py-2 px-3 hover:bg-neutral-900 rounded"
+                className="text-zinc-600 hover:text-amber-600 transition-all duration-300 text-left py-2 px-3 hover:bg-zinc-50 rounded"
               >
-                [ WORK ]
+                WORK
               </button>
               <button
                 onClick={() => {
@@ -218,9 +218,9 @@ function MainComponent() {
                     .scrollIntoView({ behavior: "smooth" });
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-zinc-400 hover:text-amber-500 transition-all duration-300 text-left py-2 px-3 hover:bg-neutral-900 rounded"
+                className="text-zinc-600 hover:text-amber-600 transition-all duration-300 text-left py-2 px-3 hover:bg-zinc-50 rounded"
               >
-                [ ABOUT ]
+                ABOUT
               </button>
               <button
                 onClick={() => {
@@ -229,9 +229,9 @@ function MainComponent() {
                     .scrollIntoView({ behavior: "smooth" });
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-zinc-400 hover:text-amber-500 transition-all duration-300 text-left py-2 px-3 hover:bg-neutral-900 rounded"
+                className="text-zinc-600 hover:text-amber-600 transition-all duration-300 text-left py-2 px-3 hover:bg-zinc-50 rounded"
               >
-                [ CONTACT ]
+                CONTACT
               </button>
             </div>
           </div>
@@ -240,37 +240,38 @@ function MainComponent() {
 
       {/* Hero Section */}
       <section className="min-h-[85vh] sm:min-h-[80vh] lg:min-h-screen flex flex-col justify-center px-4 sm:px-8 py-16 lg:px-12 pt-28 sm:pt-36 lg:pt-24 text-center relative overflow-hidden bg-grid">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50/10 to-pink-50/10 opacity-70"></div>
         {/* Glow Effects */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-amber-500/5 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-1/4 left-1/3 w-[300px] h-[300px] bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none"></div>
         
         <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
           {/* Status Label */}
-          <div className="font-mono text-xs sm:text-sm text-emerald-400 bg-emerald-950/40 border border-emerald-500/25 px-4 py-1.5 rounded-md inline-flex items-center gap-2 mb-8 animate-fade-in-up">
+          <div className="font-mono text-xs sm:text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 px-4 py-1.5 rounded-md inline-flex items-center gap-2 mb-8 animate-fade-in-up">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse-glow"></span>
             <span>SYSTEM_STATUS: ACTIVE // READY_FOR_HIRE</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-zinc-100 mb-6 tracking-tight leading-tight max-w-3xl animate-fade-in-up font-sans" style={{ animationDelay: "0.2s" }}>
-            We build the <span className="text-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.2)]">systems</span> that run your business.
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-zinc-950 mb-6 tracking-tight leading-tight max-w-3xl animate-fade-in-up font-sans" style={{ animationDelay: "0.2s" }}>
+            We build the <span className="text-amber-600 drop-shadow-[0_2px_10px_rgba(217,119,6,0.1)]">systems</span> that run your business.
           </h1>
           
-          <p className="text-base sm:text-xl text-zinc-400 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <p className="text-base sm:text-xl text-zinc-700 mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             Custom software, IoT, embedded & PLC automation — designed, built, and deployed by Aaryavarta. We solve automation and digitization problems for your business.
           </p>
 
           <div className="flex flex-col xs:flex-row gap-4 justify-center items-center w-full max-w-md animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <button
               onClick={() => document.getElementById("contact-section").scrollIntoView({ behavior: "smooth" })}
-              className="w-full xs:w-auto bg-amber-500 hover:bg-amber-600 text-neutral-900 font-mono font-bold tracking-wide px-8 py-3.5 rounded-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(245,158,11,0.35)] cursor-pointer"
+              className="w-full xs:w-auto bg-amber-500 hover:bg-amber-600 text-neutral-900 font-bold tracking-wide px-8 py-3.5 rounded-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_4px_20px_rgba(245,158,11,0.2)] cursor-pointer"
             >
-              [ GET_A_QUOTE ]
+              Get a Quote
             </button>
             <button
               onClick={() => document.getElementById("services-section").scrollIntoView({ behavior: "smooth" })}
-              className="w-full xs:w-auto border border-neutral-700 hover:border-amber-500 text-zinc-300 hover:text-white font-mono tracking-wide px-8 py-3.5 rounded-lg transition-all duration-300 hover:bg-neutral-900/50 hover:scale-[1.03]"
+              className="w-full xs:w-auto border border-zinc-300 hover:border-amber-500 text-zinc-700 hover:text-amber-600 font-medium tracking-wide px-8 py-3.5 bg-white/50 backdrop-blur-sm rounded-lg transition-all duration-300 hover:scale-[1.03]"
             >
-              [ SEE_CAPABILITIES ]
+              See Our Capabilities
             </button>
           </div>
         </div>
@@ -279,16 +280,16 @@ function MainComponent() {
       {/* Services Section */}
       <section
         id="services-section"
-        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-[#0E0F12] border-y border-neutral-800/80 relative"
+        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-white border-y border-zinc-200 relative"
       >
         <div className="w-full max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="font-mono text-xs sm:text-sm text-amber-500 tracking-widest block mb-3">// CAPABILITIES_LEDGER</span>
-            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-100">
-              What We Can Do <span className="text-amber-500">For You</span>
+            <span className="font-mono text-xs sm:text-sm text-amber-600 tracking-widest block mb-3">// CAPABILITIES_LEDGER</span>
+            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-950">
+              What We Can Do <span className="text-amber-600">For You</span>
             </h2>
-            <p className="text-zinc-400 mt-4 max-w-2xl mx-auto text-base sm:text-lg">
+            <p className="text-zinc-600 mt-4 max-w-2xl mx-auto text-base sm:text-lg">
               We design and engineer bespoke solutions centered around reliability, efficiency, and solving real operational bottlenecks.
             </p>
           </div>
@@ -297,29 +298,29 @@ function MainComponent() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
             {/* Service 1 - Custom Software */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between">
+            <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:bg-white hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-neutral-800 pb-3 font-mono text-xs text-zinc-500">
-                  <span>[ SVC_01_SOFT ]</span>
+                <div className="flex justify-between items-center mb-5 border-b border-zinc-200 pb-3 font-mono text-xs text-zinc-500">
+                  <span>SVC_01_SOFT</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-400 font-bold">ONLINE</span>
+                    <span className="text-emerald-600 font-bold">ONLINE</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   Custom Software Development
                 </h3>
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                   Bespoke applications and internal operations tools built strictly around how your business actually works, eliminating bottleneck operations.
                 </p>
-                <div className="bg-neutral-900/55 p-3 rounded-lg border border-neutral-800/80 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-amber-500 tracking-wider mb-1">Target Client</span>
-                  <span className="text-zinc-300 text-xs font-semibold">Growing businesses outgrowing Excel sheets and needing custom automated pipelines.</span>
+                <div className="bg-zinc-100/60 p-3 rounded-lg border border-zinc-200/80 mb-6">
+                  <span className="block font-mono text-[10px] uppercase text-amber-600 tracking-wider mb-1">Target Client</span>
+                  <span className="text-zinc-800 text-xs font-semibold">Growing businesses outgrowing Excel sheets and needing custom automated pipelines.</span>
                 </div>
               </div>
               <div>
-                <span className="block font-mono text-[11px] uppercase text-zinc-500 mb-2">// CAPABILITIES_LIST</span>
-                <ul className="space-y-2 text-zinc-300 text-sm font-mono">
+                <span className="block font-mono text-[11px] uppercase text-zinc-400 mb-2">// CAPABILITIES</span>
+                <ul className="space-y-2 text-zinc-700 text-sm font-mono">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500">&gt;</span> Custom ERP / CRM systems
                   </li>
@@ -334,29 +335,29 @@ function MainComponent() {
             </div>
 
             {/* Service 2 - Pre-built Products */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between">
+            <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:bg-white hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-neutral-800 pb-3 font-mono text-xs text-zinc-500">
-                  <span>[ SVC_02_PROD ]</span>
+                <div className="flex justify-between items-center mb-5 border-b border-zinc-200 pb-3 font-mono text-xs text-zinc-500">
+                  <span>SVC_02_PROD</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-400 font-bold">ONLINE</span>
+                    <span className="text-emerald-600 font-bold">ONLINE</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   Pre-built Software Products
                 </h3>
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                   Ready-to-deploy tools and administrative portals you can license and adapt rapidly instead of engineering from absolute zero.
                 </p>
-                <div className="bg-neutral-900/55 p-3 rounded-lg border border-neutral-800/80 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-amber-500 tracking-wider mb-1">Target Client</span>
-                  <span className="text-zinc-300 text-xs font-semibold">Small to mid-sized businesses wanting quick, affordable, and field-tested dashboards.</span>
+                <div className="bg-zinc-100/60 p-3 rounded-lg border border-zinc-200/80 mb-6">
+                  <span className="block font-mono text-[10px] uppercase text-amber-600 tracking-wider mb-1">Target Client</span>
+                  <span className="text-zinc-800 text-xs font-semibold">Small to mid-sized businesses wanting quick, affordable, and field-tested dashboards.</span>
                 </div>
               </div>
               <div>
-                <span className="block font-mono text-[11px] uppercase text-zinc-500 mb-2">// CAPABILITIES_LIST</span>
-                <ul className="space-y-2 text-zinc-300 text-sm font-mono">
+                <span className="block font-mono text-[11px] uppercase text-zinc-400 mb-2">// CAPABILITIES</span>
+                <ul className="space-y-2 text-zinc-700 text-sm font-mono">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500">&gt;</span> RFID/Biometric attendance
                   </li>
@@ -371,29 +372,29 @@ function MainComponent() {
             </div>
 
             {/* Service 3 - IoT Automation */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between">
+            <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:bg-white hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-neutral-800 pb-3 font-mono text-xs text-zinc-500">
-                  <span>[ SVC_03_IOT ]</span>
+                <div className="flex justify-between items-center mb-5 border-b border-zinc-200 pb-3 font-mono text-xs text-zinc-500">
+                  <span>SVC_03_IOT</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                    <span className="text-amber-400 font-bold">READY</span>
+                    <span className="text-amber-600 font-bold">READY</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   IoT Automation
                 </h3>
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                   Connected sensors, microcontrollers, and physical devices designed to automatically monitor telemetry, issue alerts, and trigger responses.
                 </p>
-                <div className="bg-neutral-900/55 p-3 rounded-lg border border-neutral-800/80 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-amber-500 tracking-wider mb-1">Target Client</span>
-                  <span className="text-zinc-300 text-xs font-semibold">Logistics operators, warehouse owners, and farmers needing remote eyes on assets.</span>
+                <div className="bg-zinc-100/60 p-3 rounded-lg border border-zinc-200/80 mb-6">
+                  <span className="block font-mono text-[10px] uppercase text-amber-600 tracking-wider mb-1">Target Client</span>
+                  <span className="text-zinc-800 text-xs font-semibold">Logistics operators, warehouse owners, and farmers needing remote eyes on assets.</span>
                 </div>
               </div>
               <div>
-                <span className="block font-mono text-[11px] uppercase text-zinc-500 mb-2">// CAPABILITIES_LIST</span>
-                <ul className="space-y-2 text-zinc-300 text-sm font-mono">
+                <span className="block font-mono text-[11px] uppercase text-zinc-400 mb-2">// CAPABILITIES</span>
+                <ul className="space-y-2 text-zinc-700 text-sm font-mono">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500">&gt;</span> Cold-chain temperature alerts
                   </li>
@@ -408,29 +409,29 @@ function MainComponent() {
             </div>
 
             {/* Service 4 - IT Automation */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between">
+            <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:bg-white hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-neutral-800 pb-3 font-mono text-xs text-zinc-500">
-                  <span>[ SVC_04_IT ]</span>
+                <div className="flex justify-between items-center mb-5 border-b border-zinc-200 pb-3 font-mono text-xs text-zinc-500">
+                  <span>SVC_04_IT</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-400 font-bold">ONLINE</span>
+                    <span className="text-emerald-600 font-bold">ONLINE</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   IT Automation & Scripting
                 </h3>
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                   Custom backend scripts, integration pipelines, and schedulers that completely take over repetitive, manual administrative tasks.
                 </p>
-                <div className="bg-neutral-900/55 p-3 rounded-lg border border-neutral-800/80 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-amber-500 tracking-wider mb-1">Target Client</span>
-                  <span className="text-zinc-300 text-xs font-semibold">Operations and IT managers spending hours copy-pasting data between services.</span>
+                <div className="bg-zinc-100/60 p-3 rounded-lg border border-zinc-200/80 mb-6">
+                  <span className="block font-mono text-[10px] uppercase text-amber-600 tracking-wider mb-1">Target Client</span>
+                  <span className="text-zinc-800 text-xs font-semibold">Operations and IT managers spending hours copy-pasting data between services.</span>
                 </div>
               </div>
               <div>
-                <span className="block font-mono text-[11px] uppercase text-zinc-500 mb-2">// CAPABILITIES_LIST</span>
-                <ul className="space-y-2 text-zinc-300 text-sm font-mono">
+                <span className="block font-mono text-[11px] uppercase text-zinc-400 mb-2">// CAPABILITIES</span>
+                <ul className="space-y-2 text-zinc-700 text-sm font-mono">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500">&gt;</span> Automated invoice generation
                   </li>
@@ -445,29 +446,29 @@ function MainComponent() {
             </div>
 
             {/* Service 5 - Embedded Systems */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between">
+            <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:bg-white hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-neutral-800 pb-3 font-mono text-xs text-zinc-500">
-                  <span>[ SVC_05_EMB ]</span>
+                <div className="flex justify-between items-center mb-5 border-b border-zinc-200 pb-3 font-mono text-xs text-zinc-500">
+                  <span>SVC_05_EMB</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-400 font-bold">ONLINE</span>
+                    <span className="text-emerald-600 font-bold">ONLINE</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   Embedded Systems Engineering
                 </h3>
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                   Bespoke electrical hardware, sensor interface integrations, custom printed circuit designs, and optimized firmware coding.
                 </p>
-                <div className="bg-neutral-900/55 p-3 rounded-lg border border-neutral-800/80 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-amber-500 tracking-wider mb-1">Target Client</span>
-                  <span className="text-zinc-300 text-xs font-semibold">Hardware developers, IoT product builders, and prototyping startups.</span>
+                <div className="bg-zinc-100/60 p-3 rounded-lg border border-zinc-200/80 mb-6">
+                  <span className="block font-mono text-[10px] uppercase text-amber-600 tracking-wider mb-1">Target Client</span>
+                  <span className="text-zinc-800 text-xs font-semibold">Hardware developers, IoT product builders, and prototyping startups.</span>
                 </div>
               </div>
               <div>
-                <span className="block font-mono text-[11px] uppercase text-zinc-500 mb-2">// CAPABILITIES_LIST</span>
-                <ul className="space-y-2 text-zinc-300 text-sm font-mono">
+                <span className="block font-mono text-[11px] uppercase text-zinc-400 mb-2">// CAPABILITIES</span>
+                <ul className="space-y-2 text-zinc-700 text-sm font-mono">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500">&gt;</span> Microcontroller boards & firmware
                   </li>
@@ -482,29 +483,29 @@ function MainComponent() {
             </div>
 
             {/* Service 6 - PLC & Industrial */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between">
+            <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:bg-white hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-neutral-800 pb-3 font-mono text-xs text-zinc-500">
-                  <span>[ SVC_06_PLC ]</span>
+                <div className="flex justify-between items-center mb-5 border-b border-zinc-200 pb-3 font-mono text-xs text-zinc-500">
+                  <span>SVC_06_PLC</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                    <span className="text-amber-400 font-bold">READY</span>
+                    <span className="text-amber-600 font-bold">READY</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-sans mb-3 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   PLC & Industrial Automation
                 </h3>
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                   Design, programming, and tuning of control systems for physical machinery and production processes to streamline manufacturing logic.
                 </p>
-                <div className="bg-neutral-900/55 p-3 rounded-lg border border-neutral-800/80 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-amber-500 tracking-wider mb-1">Target Client</span>
-                  <span className="text-zinc-300 text-xs font-semibold">Factory owners and plant operations managers seeking to modernize and reduce downtime.</span>
+                <div className="bg-zinc-100/60 p-3 rounded-lg border border-zinc-200/80 mb-6">
+                  <span className="block font-mono text-[10px] uppercase text-amber-600 tracking-wider mb-1">Target Client</span>
+                  <span className="text-zinc-800 text-xs font-semibold">Factory owners and plant operations managers seeking to modernize and reduce downtime.</span>
                 </div>
               </div>
               <div>
-                <span className="block font-mono text-[11px] uppercase text-zinc-500 mb-2">// CAPABILITIES_LIST</span>
-                <ul className="space-y-2 text-zinc-300 text-sm font-mono">
+                <span className="block font-mono text-[11px] uppercase text-zinc-400 mb-2">// CAPABILITIES</span>
+                <ul className="space-y-2 text-zinc-700 text-sm font-mono">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500">&gt;</span> Control assembly line logic
                   </li>
@@ -525,16 +526,16 @@ function MainComponent() {
       {/* Work Section */}
       <section
         id="work-section"
-        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-[#0B0C0E] relative"
+        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-blue-50 relative"
       >
         <div className="w-full max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="font-mono text-xs sm:text-sm text-amber-500 tracking-widest block mb-3">// HIST_SYS_LOG</span>
-            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-100">
-              Selected <span className="text-amber-500">Work</span>
+            <span className="font-mono text-xs sm:text-sm text-amber-600 tracking-widest block mb-3">// SELECTED_WORK_LOG</span>
+            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-950">
+              Selected <span className="text-amber-600">Work</span>
             </h2>
-            <p className="text-zinc-400 mt-4 max-w-2xl mx-auto text-base sm:text-lg">
+            <p className="text-zinc-600 mt-4 max-w-2xl mx-auto text-base sm:text-lg">
               Below are proven technical projects completed by our engineers, demonstrating our ability to build robust, field-tested integration systems.
             </p>
           </div>
@@ -542,39 +543,39 @@ function MainComponent() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {/* Project 1 */}
             <div
-              className="bg-[#131417] border border-neutral-800 rounded-xl overflow-hidden hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <div className="h-44 bg-neutral-900 relative overflow-hidden border-b border-neutral-800">
+                <div className="h-44 bg-zinc-100 relative overflow-hidden border-b border-zinc-200">
                   <img
                     src="/a-photograph-of-a-sleek-futuristic-vehic_NYciPrjhTYWc8g3SJsMKSw_2Z81PH09QcOM-JbI5NVeTg.jpeg"
                     alt="Advance Vehicle Safety System"
-                    className="object-cover w-full h-full opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
+                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#0B0C0E]/80 border border-neutral-800 font-mono text-[10px] text-amber-500 px-2 py-0.5 rounded">
-                    [ EMBEDDED_SYS ]
+                  <div className="absolute top-3 left-3 bg-white/90 border border-zinc-200 font-mono text-[10px] text-amber-600 px-2 py-0.5 rounded font-bold">
+                    EMBEDDED_SYS
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                     Advance Vehicle Safety System
                   </h3>
-                  <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                  <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                     Developed as a proof of concept for automotive safety, demonstrating our ability to integrate high-frequency sensors with real-time collision warning algorithms.
                   </p>
                 </div>
               </div>
               <div className="p-5 pt-0">
                 <div className="mb-4">
-                  <span className="block font-mono text-[10px] uppercase text-zinc-500 mb-1.5">// STACK_METRIC</span>
+                  <span className="block font-mono text-[10px] uppercase text-zinc-400 mb-1.5">// METRICS</span>
                   <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       IoT Sensors
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       AI/ML Algorithms
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Real-time MCU
                     </span>
                   </div>
@@ -583,9 +584,9 @@ function MainComponent() {
                   href="/projects/vehicle-safety"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-amber-500 hover:text-amber-400 gap-1.5"
+                  className="inline-flex items-center text-xs font-mono font-bold text-amber-600 hover:text-amber-700 gap-1.5"
                 >
-                  <span>[ READ_CASE_STUDY ]</span>
+                  <span>Read Case Study</span>
                   <i className="fas fa-external-link-alt text-[9px]"></i>
                 </a>
               </div>
@@ -593,39 +594,39 @@ function MainComponent() {
 
             {/* Project 2 */}
             <div
-              className="bg-[#131417] border border-neutral-800 rounded-xl overflow-hidden hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <div className="h-44 bg-neutral-900 relative overflow-hidden border-b border-neutral-800">
+                <div className="h-44 bg-zinc-100 relative overflow-hidden border-b border-zinc-200">
                   <img
                     src="/a-photograph-of-a-sleek-modern-hostel-lo_jG8lIKpjQySnwZzrVmHeog_HgtE8COZRfSYk0ybkGMHdw.jpeg"
                     alt="IoT Based Hostel Access and Attendance Monitoring"
-                    className="object-cover w-full h-full opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
+                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#0B0C0E]/80 border border-neutral-800 font-mono text-[10px] text-amber-500 px-2 py-0.5 rounded">
-                    [ IOT_PRODUCT ]
+                  <div className="absolute top-3 left-3 bg-white/90 border border-zinc-200 font-mono text-[10px] text-amber-600 px-2 py-0.5 rounded font-bold">
+                    IOT_PRODUCT
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                     IoT Access & Attendance Monitoring
                   </h3>
-                  <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                  <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                     A deployed access control solution proving our capability to interface RFID hardware, cloud databases, and real-time dashboard tracking.
                   </p>
                 </div>
               </div>
               <div className="p-5 pt-0">
                 <div className="mb-4">
-                  <span className="block font-mono text-[10px] uppercase text-zinc-500 mb-1.5">// STACK_METRIC</span>
+                  <span className="block font-mono text-[10px] uppercase text-zinc-400 mb-1.5">// METRICS</span>
                   <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       RFID / ESP32
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Cloud Portal
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Biometrics
                     </span>
                   </div>
@@ -634,9 +635,9 @@ function MainComponent() {
                   href="/projects/hostel-management"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-amber-500 hover:text-amber-400 gap-1.5"
+                  className="inline-flex items-center text-xs font-mono font-bold text-amber-600 hover:text-amber-700 gap-1.5"
                 >
-                  <span>[ READ_CASE_STUDY ]</span>
+                  <span>Read Case Study</span>
                   <i className="fas fa-external-link-alt text-[9px]"></i>
                 </a>
               </div>
@@ -644,39 +645,39 @@ function MainComponent() {
 
             {/* Project 3 */}
             <div
-              className="bg-[#131417] border border-neutral-800 rounded-xl overflow-hidden hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <div className="h-44 bg-neutral-900 relative overflow-hidden border-b border-neutral-800">
+                <div className="h-44 bg-zinc-100 relative overflow-hidden border-b border-zinc-200">
                   <img
                     src="/a-photograph-of-a-sleek-black-ai-based-d_ZbCeUcAaT0qMinjMNOCGJg_Z5SFuRpQRr2Jbftu5NMTRA.jpeg"
                     alt="AI-based Drone for Disaster Conditions"
-                    className="object-cover w-full h-full opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
+                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#0B0C0E]/80 border border-neutral-800 font-mono text-[10px] text-amber-500 px-2 py-0.5 rounded">
-                    [ AUTONOMOUS_HW ]
+                  <div className="absolute top-3 left-3 bg-white/90 border border-zinc-200 font-mono text-[10px] text-amber-600 px-2 py-0.5 rounded font-bold">
+                    AUTONOMOUS_HW
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                     AI-based Disaster Recovery Drone
                   </h3>
-                  <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                  <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                     A prototype showing our ability to build autonomous hardware, integrate thermal/vision sensors, and process AI detection models on edge devices.
                   </p>
                 </div>
               </div>
               <div className="p-5 pt-0">
                 <div className="mb-4">
-                  <span className="block font-mono text-[10px] uppercase text-zinc-500 mb-1.5">// STACK_METRIC</span>
+                  <span className="block font-mono text-[10px] uppercase text-zinc-400 mb-1.5">// METRICS</span>
                   <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Edge AI / Vision
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Pixhawk Flight
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Thermal Telemetry
                     </span>
                   </div>
@@ -685,9 +686,9 @@ function MainComponent() {
                   href="/projects/ai-drone"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-amber-500 hover:text-amber-400 gap-1.5"
+                  className="inline-flex items-center text-xs font-mono font-bold text-amber-600 hover:text-amber-700 gap-1.5"
                 >
-                  <span>[ READ_CASE_STUDY ]</span>
+                  <span>Read Case Study</span>
                   <i className="fas fa-external-link-alt text-[9px]"></i>
                 </a>
               </div>
@@ -695,39 +696,39 @@ function MainComponent() {
 
             {/* Project 4 */}
             <div
-              className="bg-[#131417] border border-neutral-800 rounded-xl overflow-hidden hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <div className="h-44 bg-neutral-900 relative overflow-hidden border-b border-neutral-800">
+                <div className="h-44 bg-zinc-100 relative overflow-hidden border-b border-zinc-200">
                   <img
                     src="/otp-based-home-door-lock-system-esp8266-_a7MfYoVqQ7KyTAC1WUDPvg_Vl_FzxiMSbKSnpcQ4CGIzQ.jpeg"
                     alt="OTP Based Home Door Lock System"
-                    className="object-cover w-full h-full opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
+                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#0B0C0E]/80 border border-neutral-800 font-mono text-[10px] text-amber-500 px-2 py-0.5 rounded">
-                    [ SECURITY_AUTO ]
+                  <div className="absolute top-3 left-3 bg-white/90 border border-zinc-200 font-mono text-[10px] text-amber-600 px-2 py-0.5 rounded font-bold">
+                    SECURITY_AUTO
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                     OTP Based Smart Latch System
                   </h3>
-                  <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                  <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                     An automated security latch demonstrating our ability to link physical locks, Wi-Fi microcontrollers, and third-party SMS/OTP APIs.
                   </p>
                 </div>
               </div>
               <div className="p-5 pt-0">
                 <div className="mb-4">
-                  <span className="block font-mono text-[10px] uppercase text-zinc-500 mb-1.5">// STACK_METRIC</span>
+                  <span className="block font-mono text-[10px] uppercase text-zinc-400 mb-1.5">// METRICS</span>
                   <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       ESP8266 Wi-Fi
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Twilio SMS API
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Relay Controller
                     </span>
                   </div>
@@ -736,9 +737,9 @@ function MainComponent() {
                   href="/projects/otp-door-lock"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-amber-500 hover:text-amber-400 gap-1.5"
+                  className="inline-flex items-center text-xs font-mono font-bold text-amber-600 hover:text-amber-700 gap-1.5"
                 >
-                  <span>[ READ_CASE_STUDY ]</span>
+                  <span>Read Case Study</span>
                   <i className="fas fa-external-link-alt text-[9px]"></i>
                 </a>
               </div>
@@ -746,39 +747,39 @@ function MainComponent() {
 
             {/* Project 5 */}
             <div
-              className="bg-[#131417] border border-neutral-800 rounded-xl overflow-hidden hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <div className="h-44 bg-neutral-900 relative overflow-hidden border-b border-neutral-800">
+                <div className="h-44 bg-zinc-100 relative overflow-hidden border-b border-zinc-200">
                   <img
                     src="/mouse.jpeg"
                     alt="Mouse Poking Device Using LDR"
-                    className="object-cover w-full h-full opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
+                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#0B0C0E]/80 border border-neutral-800 font-mono text-[10px] text-amber-500 px-2 py-0.5 rounded">
-                    [ CUSTOM_HARDWARE ]
+                  <div className="absolute top-3 left-3 bg-white/90 border border-zinc-200 font-mono text-[10px] text-amber-600 px-2 py-0.5 rounded font-bold">
+                    CUSTOM_HARDWARE
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                     Targeted Light-Triggered Actuator
                   </h3>
-                  <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
+                  <p className="text-zinc-600 text-sm mb-4 leading-relaxed">
                     A custom embedded device showing how simple sensor inputs (photoresistors) can drive physical actuators automatically for specialized deterrence niches.
                   </p>
                 </div>
               </div>
               <div className="p-5 pt-0">
                 <div className="mb-4">
-                  <span className="block font-mono text-[10px] uppercase text-zinc-500 mb-1.5">// STACK_METRIC</span>
+                  <span className="block font-mono text-[10px] uppercase text-zinc-400 mb-1.5">// METRICS</span>
                   <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       LDR Photoresistor
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Solenoid Driver
                     </span>
-                    <span className="bg-neutral-800/80 border border-neutral-700 text-zinc-300 px-2 py-0.5 rounded">
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">
                       Analog Controls
                     </span>
                   </div>
@@ -787,9 +788,9 @@ function MainComponent() {
                   href="/projects/mouse-poking-device"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-amber-500 hover:text-amber-400 gap-1.5"
+                  className="inline-flex items-center text-xs font-mono font-bold text-amber-600 hover:text-amber-700 gap-1.5"
                 >
-                  <span>[ READ_CASE_STUDY ]</span>
+                  <span>Read Case Study</span>
                   <i className="fas fa-external-link-alt text-[9px]"></i>
                 </a>
               </div>
@@ -801,28 +802,28 @@ function MainComponent() {
       {/* About Section */}
       <section
         id="about-section"
-        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-[#0E0F12] border-t border-neutral-800/80"
+        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-blue-50 border-t border-zinc-200"
       >
         <div className="w-full max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="font-mono text-xs sm:text-sm text-amber-500 tracking-widest block mb-3">// CORE_INTELLIGENCE</span>
-            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-100">
-              About <span className="text-amber-500">Aaryavarta</span>
+            <span className="font-mono text-xs sm:text-sm text-amber-600 tracking-widest block mb-3">// CORE_INTELLIGENCE</span>
+            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-950">
+              About <span className="text-amber-600">Aaryavarta</span>
             </h2>
-            <p className="text-zinc-400 mt-5 max-w-3xl mx-auto text-base sm:text-lg">
+            <p className="text-zinc-700 mt-5 max-w-3xl mx-auto text-base sm:text-lg">
               Aaryavarta is a small, focused team of embedded and software engineers who take on the automation work bigger agencies overlook. We bridge the gap between physical hardware and digital business tools.
             </p>
           </div>
 
           {/* Kalam Philosophy Banner */}
-          <div className="max-w-3xl mx-auto bg-neutral-900/60 border border-neutral-800/80 rounded-xl p-6 sm:p-8 mb-16 text-center font-sans relative overflow-hidden">
+          <div className="max-w-3xl mx-auto bg-white border border-zinc-200 rounded-xl p-6 sm:p-8 mb-16 text-center font-sans relative overflow-hidden shadow-sm">
             <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full blur-2xl pointer-events-none"></div>
             <i className="fa-solid fa-quote-left text-amber-500/20 text-4xl block mb-3"></i>
-            <p className="text-base sm:text-lg text-zinc-300 italic mb-4 leading-relaxed">
+            <p className="text-base sm:text-lg text-zinc-800 italic mb-4 leading-relaxed">
               "Dream is not that which you see while sleeping, it is something that does not let you sleep."
             </p>
-            <span className="font-mono text-xs text-amber-500 tracking-wider font-bold">
+            <span className="font-mono text-xs text-amber-600 tracking-wider font-bold">
               — DR. A.P.J. ABDUL KALAM
             </span>
           </div>
@@ -830,129 +831,129 @@ function MainComponent() {
           {/* Team Members */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Mayur Patil */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group text-center flex flex-col justify-between">
+            <div className="bg-white border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group text-center flex flex-col justify-between">
               <div>
                 <div className="mb-5 relative inline-block">
                   <img
                     src="/passphoto-new.png"
                     alt="Mayur Patil"
-                    className="w-20 h-20 rounded-full object-cover border-2 border-neutral-800 group-hover:border-amber-500/50 transition-all duration-300 mx-auto"
+                    className="w-20 h-20 rounded-full object-cover border-2 border-zinc-200 group-hover:border-amber-500 transition-all duration-300 mx-auto"
                   />
-                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-[#131417] rounded-full"></span>
+                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
                 </div>
-                <h3 className="text-lg font-bold font-sans text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-lg font-bold font-sans text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   Mayur Patil
                 </h3>
-                <p className="text-amber-500 font-mono text-xs mb-4 tracking-wide uppercase">
+                <p className="text-amber-600 font-mono text-xs mb-4 tracking-wide uppercase">
                   Lead Embedded & IoT Architect
                 </p>
-                <p className="text-zinc-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                <p className="text-zinc-600 text-xs sm:text-sm mb-6 leading-relaxed">
                   Directs development operations, translating client business criteria into custom firmware, IoT telemetry networks, and PCB layouts.
                 </p>
               </div>
 
               <div>
-                <div className="mb-5 border-t border-neutral-800/80 pt-4">
-                  <span className="block font-mono text-[9px] uppercase text-zinc-500 mb-2">// TECHNICAL_SKILLS</span>
+                <div className="mb-5 border-t border-zinc-100 pt-4">
+                  <span className="block font-mono text-[9px] uppercase text-zinc-400 mb-2">// TECHNICAL_SKILLS</span>
                   <div className="flex flex-wrap gap-1.5 justify-center font-mono text-[9px]">
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">IoT Networks</span>
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">Firmware Dev</span>
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">PCB Layout</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">IoT Networks</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">Firmware Dev</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">PCB Layout</span>
                   </div>
                 </div>
                 <a
                   href="/portfolio/mayur"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs font-bold text-amber-500 hover:text-amber-400 inline-flex items-center gap-1 group/btn"
+                  className="font-mono text-xs font-bold text-amber-600 hover:text-amber-700 inline-flex items-center gap-1 group/btn"
                 >
-                  <span>[ UPLINK_PORTFOLIO ]</span>
+                  <span>View Portfolio</span>
                   <i className="fa-solid fa-arrow-up-right-from-square text-[9px] group-hover/btn:translate-x-0.5 transition-transform"></i>
                 </a>
               </div>
             </div>
 
             {/* Ganesh Wankhade */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group text-center flex flex-col justify-between">
+            <div className="bg-white border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group text-center flex flex-col justify-between">
               <div>
                 <div className="mb-5 relative inline-block">
                   <img
                     src="/ganesh.jpg"
                     alt="Ganesh Wankhade"
-                    className="w-20 h-20 rounded-full object-cover border-2 border-neutral-800 group-hover:border-amber-500/50 transition-all duration-300 mx-auto"
+                    className="w-20 h-20 rounded-full object-cover border-2 border-zinc-200 group-hover:border-amber-500 transition-all duration-300 mx-auto"
                   />
-                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-[#131417] rounded-full"></span>
+                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
                 </div>
-                <h3 className="text-lg font-bold font-sans text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-lg font-bold font-sans text-zinc-955 group-hover:text-amber-600 transition-colors duration-300">
                   Ganesh Wankhade
                 </h3>
-                <p className="text-amber-500 font-mono text-xs mb-4 tracking-wide uppercase">
+                <p className="text-amber-600 font-mono text-xs mb-4 tracking-wide uppercase">
                   Hardware Integration Expert
                 </p>
-                <p className="text-zinc-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                <p className="text-zinc-600 text-xs sm:text-sm mb-6 leading-relaxed">
                   Focuses on embedded hardware testing, networking interfaces, protocol operations, and client device installations.
                 </p>
               </div>
 
               <div>
-                <div className="mb-5 border-t border-neutral-800/80 pt-4">
-                  <span className="block font-mono text-[9px] uppercase text-zinc-500 mb-2">// TECHNICAL_SKILLS</span>
+                <div className="mb-5 border-t border-zinc-100 pt-4">
+                  <span className="block font-mono text-[9px] uppercase text-zinc-400 mb-2">// TECHNICAL_SKILLS</span>
                   <div className="flex flex-wrap gap-1.5 justify-center font-mono text-[9px]">
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">Hardware Design</span>
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">Integration</span>
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">Networking</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">Hardware Design</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">Integration</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">Networking</span>
                   </div>
                 </div>
                 <a
                   href="/portfolio/ganesh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs font-bold text-amber-500 hover:text-amber-400 inline-flex items-center gap-1 group/btn"
+                  className="font-mono text-xs font-bold text-amber-600 hover:text-amber-700 inline-flex items-center gap-1 group/btn"
                 >
-                  <span>[ UPLINK_PORTFOLIO ]</span>
+                  <span>View Portfolio</span>
                   <i className="fa-solid fa-arrow-up-right-from-square text-[9px] group-hover/btn:translate-x-0.5 transition-transform"></i>
                 </a>
               </div>
             </div>
 
             {/* Yash Dhake */}
-            <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.05)] transition-all duration-300 group text-center flex flex-col justify-between">
+            <div className="bg-white border border-zinc-200 rounded-xl p-6 hover:border-amber-500 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group text-center flex flex-col justify-between">
               <div>
                 <div className="mb-5 relative inline-block">
                   <img
                     src="/yash.jpg"
                     alt="Yash Dhake"
-                    className="w-20 h-20 rounded-full object-cover border-2 border-neutral-800 group-hover:border-amber-500/50 transition-all duration-300 mx-auto"
+                    className="w-20 h-20 rounded-full object-cover border-2 border-zinc-200 group-hover:border-amber-500 transition-all duration-300 mx-auto"
                   />
-                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-[#131417] rounded-full"></span>
+                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
                 </div>
-                <h3 className="text-lg font-bold font-sans text-zinc-100 group-hover:text-amber-500 transition-colors duration-300">
+                <h3 className="text-lg font-bold font-sans text-zinc-950 group-hover:text-amber-600 transition-colors duration-300">
                   Yash Dhake
                 </h3>
-                <p className="text-amber-500 font-mono text-xs mb-4 tracking-wide uppercase">
+                <p className="text-amber-600 font-mono text-xs mb-4 tracking-wide uppercase">
                   Technical Documentation Specialist
                 </p>
-                <p className="text-zinc-400 text-xs sm:text-sm mb-6 leading-relaxed">
+                <p className="text-zinc-600 text-xs sm:text-sm mb-6 leading-relaxed">
                   Coordinates code audits, client-facing system manuals, component registries, and hardware-software integration blueprints.
                 </p>
               </div>
 
               <div>
-                <div className="mb-5 border-t border-neutral-800/80 pt-4">
-                  <span className="block font-mono text-[9px] uppercase text-zinc-500 mb-2">// TECHNICAL_SKILLS</span>
+                <div className="mb-5 border-t border-zinc-100 pt-4">
+                  <span className="block font-mono text-[9px] uppercase text-zinc-400 mb-2">// TECHNICAL_SKILLS</span>
                   <div className="flex flex-wrap gap-1.5 justify-center font-mono text-[9px]">
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">Technical Writing</span>
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">System Blueprints</span>
-                    <span className="bg-neutral-900 border border-neutral-800 text-zinc-400 px-2 py-0.5 rounded">QA Auditing</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">Technical Writing</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">System Blueprints</span>
+                    <span className="bg-zinc-50 border border-zinc-200 text-zinc-600 px-2 py-0.5 rounded">QA Auditing</span>
                   </div>
                 </div>
                 <a
                   href="/portfolio/yash"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs font-bold text-amber-500 hover:text-amber-400 inline-flex items-center gap-1 group/btn"
+                  className="font-mono text-xs font-bold text-amber-600 hover:text-amber-700 inline-flex items-center gap-1 group/btn"
                 >
-                  <span>[ UPLINK_PORTFOLIO ]</span>
+                  <span>View Portfolio</span>
                   <i className="fa-solid fa-arrow-up-right-from-square text-[9px] group-hover/btn:translate-x-0.5 transition-transform"></i>
                 </a>
               </div>
@@ -964,21 +965,21 @@ function MainComponent() {
       {/* Contact Section */}
       <section
         id="contact-section"
-        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-[#0B0C0E] border-t border-neutral-800/80"
+        className="px-4 py-16 sm:px-8 sm:py-24 lg:px-12 bg-white border-t border-zinc-200"
       >
         <div className="w-full max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <span className="font-mono text-xs sm:text-sm text-amber-500 tracking-widest block mb-3">// UPLINK_ESTABLISH</span>
-            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-100">
-              Get in <span className="text-amber-500">Touch</span>
+            <span className="font-mono text-xs sm:text-sm text-amber-600 tracking-widest block mb-3">// CONTACT_UPLINK</span>
+            <h2 className="text-3xl sm:text-4xl font-bold font-sans text-zinc-950">
+              Get in <span className="text-amber-600">Touch</span>
             </h2>
-            <p className="text-zinc-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
+            <p className="text-zinc-600 mt-4 max-w-xl mx-auto text-sm sm:text-base">
               Send us a breakdown of your operational bottlenecks. Let's discuss pricing, technical feasibility, and system architectural specifications.
             </p>
           </div>
 
-          <div className="bg-[#131417] border border-neutral-800 rounded-xl p-6 sm:p-8 max-w-2xl mx-auto hover:border-neutral-700/80 transition-all duration-300">
+          <div className="bg-slate-50/50 border border-zinc-200 rounded-xl p-6 sm:p-8 max-w-2xl mx-auto hover:border-zinc-300 transition-all duration-300">
             <form onSubmit={handleContactSubmit} className="space-y-6">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -992,7 +993,7 @@ function MainComponent() {
                     value={contactForm.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-[#0B0C0E] border border-neutral-800 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-200 outline-none transition-all duration-300 text-sm focus:shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+                    className="w-full bg-white border border-zinc-200 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-800 outline-none transition-all duration-300 text-sm focus:shadow-[0_2px_10px_rgba(245,158,11,0.05)]"
                     placeholder="Your Name"
                   />
                 </div>
@@ -1007,7 +1008,7 @@ function MainComponent() {
                     value={contactForm.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full bg-[#0B0C0E] border border-neutral-800 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-200 outline-none transition-all duration-300 text-sm focus:shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+                    className="w-full bg-white border border-zinc-200 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-800 outline-none transition-all duration-300 text-sm focus:shadow-[0_2px_10px_rgba(245,158,11,0.05)]"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -1023,7 +1024,7 @@ function MainComponent() {
                   value={contactForm.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full bg-[#0B0C0E] border border-neutral-800 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-200 outline-none transition-all duration-300 text-sm focus:shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+                  className="w-full bg-white border border-zinc-200 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-800 outline-none transition-all duration-300 text-sm focus:shadow-[0_2px_10px_rgba(245,158,11,0.05)]"
                   placeholder="e.g. Automation System Upgrade / Hardware Development"
                 />
               </div>
@@ -1036,7 +1037,7 @@ function MainComponent() {
                   name="service"
                   value={contactForm.service}
                   onChange={handleInputChange}
-                  className="w-full bg-[#0B0C0E] border border-neutral-800 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-300 outline-none transition-all duration-300 text-sm cursor-pointer focus:shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+                  className="w-full bg-white border border-zinc-200 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-800 outline-none transition-all duration-300 text-sm cursor-pointer focus:shadow-[0_2px_10px_rgba(245,158,11,0.05)]"
                 >
                   <option value="Custom Software Development">Custom Software Development</option>
                   <option value="Pre-built Software Product">Pre-built Software Product</option>
@@ -1058,14 +1059,14 @@ function MainComponent() {
                   onChange={handleInputChange}
                   rows="5"
                   required
-                  className="w-full bg-[#0B0C0E] border border-neutral-800 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-200 outline-none transition-all duration-300 text-sm focus:shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+                  className="w-full bg-white border border-zinc-200 focus:border-amber-500 rounded-lg px-4 py-3 text-zinc-800 outline-none transition-all duration-300 text-sm focus:shadow-[0_2px_10px_rgba(245,158,11,0.05)]"
                   placeholder="Tell us what physical systems or digital processes you need engineered or automated..."
                 ></textarea>
               </div>
 
               {submitMessage && (
-                <div className="text-red-500 text-xs font-mono text-center animate-fade-in">
-                  [ ERROR_LOG: {submitMessage} ]
+                <div className="text-red-600 text-xs font-mono text-center animate-fade-in">
+                  Error: {submitMessage}
                 </div>
               )}
 
@@ -1073,18 +1074,18 @@ function MainComponent() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-amber-500 hover:bg-amber-600 disabled:bg-neutral-800 disabled:text-zinc-500 text-neutral-950 font-mono font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_0_20px_rgba(245,158,11,0.25)] flex items-center justify-center gap-2"
+                  className="w-full bg-amber-500 hover:bg-amber-600 disabled:bg-neutral-200 disabled:text-zinc-400 text-neutral-950 font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_4px_15px_rgba(245,158,11,0.15)] flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
                       <i className="fas fa-spinner fa-spin mr-2"></i>
-                      <span>[ TRANSMITTING... ]</span>
+                      <span>Sending...</span>
                     </>
                   ) : (
-                    <span>[ TRANSMIT_INQUIRY ]</span>
+                    <span>Send Message</span>
                   )}
                 </button>
-                <span className="text-[11px] font-mono text-zinc-500 block text-center">// TRANSMISSION_EXPECTATION: Response typically dispatched within 24–48 hours.</span>
+                <span className="text-[11px] font-mono text-zinc-500 block text-center">Response typically sent within 24–48 hours.</span>
               </div>
             </form>
           </div>
@@ -1092,7 +1093,7 @@ function MainComponent() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#08090B] text-zinc-400 border-t border-neutral-900 px-4 md:px-6 py-12 lg:py-16">
+      <footer className="bg-zinc-950 text-zinc-400 border-t border-zinc-900 px-4 md:px-6 py-12 lg:py-16">
         <div className="w-full max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center md:text-left">
@@ -1125,7 +1126,7 @@ function MainComponent() {
             </div>
 
             <div className="text-center md:text-left">
-              <h4 className="font-mono text-xs text-amber-500 uppercase tracking-widest mb-4">// LINKS</h4>
+              <h4 className="font-mono text-xs text-amber-500 uppercase tracking-widest mb-4">LINKS</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
@@ -1163,7 +1164,7 @@ function MainComponent() {
             </div>
 
             <div className="text-center md:text-left">
-              <h4 className="font-mono text-xs text-amber-500 uppercase tracking-widest mb-4">// SOLUTIONS</h4>
+              <h4 className="font-mono text-xs text-amber-500 uppercase tracking-widest mb-4">SOLUTIONS</h4>
               <ul className="space-y-2 text-sm text-zinc-500">
                 <li>Custom ERP & Portals</li>
                 <li>RFID Access Control</li>
@@ -1174,7 +1175,7 @@ function MainComponent() {
             </div>
 
             <div className="text-center md:text-left font-mono">
-              <h4 className="text-xs text-amber-500 uppercase tracking-widest mb-4">// INFO_TERM</h4>
+              <h4 className="text-xs text-amber-500 uppercase tracking-widest mb-4">INFO</h4>
               <ul className="space-y-2 text-xs text-zinc-500">
                 <li>SYS_NODE: contact@aaryavarta</li>
                 <li>SYS_TEL: +91 80106 22267</li>
@@ -1183,8 +1184,8 @@ function MainComponent() {
             </div>
           </div>
 
-          <div className="border-t border-neutral-900 mt-10 pt-8 text-center text-zinc-600 text-xs font-mono">
-            <p>&copy; 2026 Aaryavarta. Deployed in compliance with system specifications.</p>
+          <div className="border-t border-zinc-900 mt-10 pt-8 text-center text-zinc-600 text-xs font-mono">
+            <p>&copy; 2026 Aaryavarta. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -1232,11 +1233,11 @@ function MainComponent() {
         @keyframes pulseGlow {
           0%, 100% {
             opacity: 1;
-            box-shadow: 0 0 4px rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 4px rgba(16, 185, 129, 0.3);
           }
           50% {
             opacity: 0.5;
-            box-shadow: 0 0 12px rgba(16, 185, 129, 0.8);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
           }
         }
 
@@ -1261,12 +1262,12 @@ function MainComponent() {
           animation: pulseGlow 2s ease-in-out infinite;
         }
 
-        /* Background grid effect */
+        /* Background grid effect for light theme */
         .bg-grid {
           background-size: 40px 40px;
           background-image: 
-            linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
         }
 
         /* Smooth scrolling */

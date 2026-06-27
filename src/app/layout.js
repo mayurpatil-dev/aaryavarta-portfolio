@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className="bg-[#090A0C] text-gray-200 antialiased font-sans">{children}</body>
+      <body className="bg-blue-50 text-zinc-900 antialiased font-sans">{children}</body>
     </html>
   )
 }
