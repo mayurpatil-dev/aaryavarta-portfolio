@@ -1,16 +1,24 @@
-import { Inter } from 'next/font/google'
+import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
+})
 
 export const metadata = {
-  title: 'Aaryavarta | Innovating Embedded Engineering',
-  description: 'Showcasing innovative projects and the brilliant minds behind cutting-edge technology solutions in IoT, AI, and embedded systems.',
+  title: 'Aaryavarta | Custom Automation, Embedded & IoT Systems',
+  description: 'We build the systems that run your business. Bespoke software, IoT, embedded engineering, and PLC industrial automation solutions by Aaryavarta.',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <head>
         {/* Font Awesome CDN */}
         <link
@@ -28,7 +36,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className="bg-[#090A0C] text-gray-200 antialiased font-sans">{children}</body>
     </html>
   )
 }

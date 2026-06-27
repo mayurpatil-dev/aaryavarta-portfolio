@@ -5,6 +5,10 @@ module.exports = {
   ],
   "theme": {
     "extend": {
+      fontFamily: {
+        sans: ['var(--font-space-grotesk)', 'sans-serif'],
+        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+      },
       screens: {
         'xs': '475px',
         'sm': '640px',
