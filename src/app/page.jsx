@@ -1173,7 +1173,7 @@ function MainComponent() {
             <div className="text-center md:text-left font-sans font-medium">
               <h3 className="text-xs text-amber-500 uppercase tracking-widest mb-4">INFO</h3>
               <ul className="space-y-2 text-xs text-slate-500">
-                <li>[EMAIL_ADDRESS]</li>
+                <li>[contact.aaryavarta@gmail.com]</li>
                 <li>+91 90967 10572</li>
                 <li>Maharashtra, India</li>
               </ul>
