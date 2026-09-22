@@ -506,8 +506,12 @@ function MainComponent() {
             {/* New Project 1 */}
             <div className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden border-b border-slate-200 flex items-center justify-center">
-                  <i className="fas fa-tools text-5xl text-slate-300 group-hover:text-purple-300 transition-colors duration-500 group-hover:scale-110"></i>
+                <div className="h-44 bg-slate-50 relative overflow-hidden border-b border-slate-200">
+                  <img
+                    src="/smms.png"
+                    alt="Smart Maintenance Management System"
+                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
+                  />
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
