@@ -502,7 +502,148 @@ function MainComponent() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
-            {/* Project 1 */}
+
+            {/* New Project 1 */}
+            <div className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden border-b border-slate-200 flex items-center justify-center">
+                  <i className="fas fa-tools text-5xl text-slate-300 group-hover:text-purple-300 transition-colors duration-500 group-hover:scale-110"></i>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
+                    Smart Maintenance Management System
+                  </h3>
+                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
+                    A comprehensive IoT-based maintenance scheduling and tracking platform for industrial operations.
+                  </p>
+                </div>
+              </div>
+              <div className="p-5 pt-0">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
+                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Predictive Maintenance</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">IoT Sensors</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Cloud Dashboard</span>
+                  </div>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5">
+                  <span>Read Case Study</span>
+                  <i className="fas fa-chevron-right text-[9px]"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* New Project 2 */}
+            <div className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden border-b border-slate-200 flex items-center justify-center">
+                  <i className="fas fa-bolt text-5xl text-slate-300 group-hover:text-purple-300 transition-colors duration-500 group-hover:scale-110"></i>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
+                    Energy Management System
+                  </h3>
+                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
+                    Real-time energy monitoring and optimization system for manufacturing plants to reduce power consumption.
+                  </p>
+                </div>
+              </div>
+              <div className="p-5 pt-0">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
+                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Smart Meters</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Data Analytics</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Cost Reduction</span>
+                  </div>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5">
+                  <span>Read Case Study</span>
+                  <i className="fas fa-chevron-right text-[9px]"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* New Project 3 */}
+            <div className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden border-b border-slate-200 flex items-center justify-center">
+                  <i className="fas fa-id-badge text-5xl text-slate-300 group-hover:text-purple-300 transition-colors duration-500 group-hover:scale-110"></i>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
+                    Visitor Management System
+                  </h3>
+                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
+                    A digitized, secure visitor entry and tracking system with automated logging and access control.
+                  </p>
+                </div>
+              </div>
+              <div className="p-5 pt-0">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
+                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Access Control</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Security</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Web Portal</span>
+                  </div>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5">
+                  <span>Read Case Study</span>
+                  <i className="fas fa-chevron-right text-[9px]"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* New Project 4 */}
+            <div className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden border-b border-slate-200 flex items-center justify-center">
+                  <i className="fas fa-route text-5xl text-slate-300 group-hover:text-purple-300 transition-colors duration-500 group-hover:scale-110"></i>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
+                    Product Traceability System
+                  </h3>
+                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
+                    End-to-end supply chain tracking solution using barcode/RFID integration for complete product lifecycle visibility.
+                  </p>
+                </div>
+              </div>
+              <div className="p-5 pt-0">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
+                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">RFID/Barcode</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Supply Chain</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Database</span>
+                  </div>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5">
+                  <span>Read Case Study</span>
+                  <i className="fas fa-chevron-right text-[9px]"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* New Project 5 */}
+            <div className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="h-44 bg-gradient-to-br from-slate-100 to-slate-50 relative overflow-hidden border-b border-slate-200 flex items-center justify-center">
+                  <i className="fas fa-chart-line text-5xl text-slate-300 group-hover:text-purple-300 transition-colors duration-500 group-hover:scale-110"></i>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
+                    OEE Monitoring System
+                  </h3>
+                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
+                    Overall Equipment Effectiveness dashboard to track manufacturing productivity, downtime, and quality metrics in real-time.
+                  </p>
+                </div>
+              </div>
+              <div className="p-5 pt-0">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
+                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">OEE</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Industrial IoT</span><span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">Analytics</span>
+                  </div>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5">
+                  <span>Read Case Study</span>
+                  <i className="fas fa-chevron-right text-[9px]"></i>
+                </a>
+              </div>
+            </div>
+
+{/* Project 1 */}
             <div
               className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
@@ -550,7 +691,8 @@ function MainComponent() {
               </div>
             </div>
 
-            {/* Project 2 */}
+            
+{/* Project 2 */}
             <div
               className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
@@ -598,105 +740,10 @@ function MainComponent() {
               </div>
             </div>
 
-            {/* Project 3 */}
+            
+{/* Project 5 */}
             <div
               className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
-            >
-              <div>
-                <div className="h-44 bg-slate-50 relative overflow-hidden border-b border-slate-200">
-                  <img
-                    src="/a-photograph-of-a-sleek-black-ai-based-d_ZbCeUcAaT0qMinjMNOCGJg_Z5SFuRpQRr2Jbftu5NMTRA.jpeg"
-                    alt="AI-based Drone for Disaster Conditions"
-                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
-                    AI-based Disaster Recovery Drone
-                  </h3>
-                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                    A prototype showing our ability to build autonomous hardware, integrate thermal/vision sensors, and process AI detection models on edge devices.
-                  </p>
-                </div>
-              </div>
-              <div className="p-5 pt-0">
-                <div className="mb-4">
-
-                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
-                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">
-                      Edge AI / Vision
-                    </span>
-                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">
-                      Pixhawk Flight
-                    </span>
-                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">
-                      Thermal Telemetry
-                    </span>
-                  </div>
-                </div>
-                <a
-                  href="/projects/ai-drone"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5"
-                >
-                  <span>Read Case Study</span>
-                  <i className="fas fa-chevron-right text-[9px]"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* Project 4 */}
-            <div
-              className="col-span-1 sm:col-span-1 lg:col-span-2 lg:col-start-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
-            >
-              <div>
-                <div className="h-44 bg-slate-50 relative overflow-hidden border-b border-slate-200">
-                  <img
-                    src="/otp-based-home-door-lock-system-esp8266-_a7MfYoVqQ7KyTAC1WUDPvg_Vl_FzxiMSbKSnpcQ4CGIzQ.jpeg"
-                    alt="OTP Based Home Door Lock System"
-                    className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
-                    OTP Based Smart Latch System
-                  </h3>
-                  <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                    An automated security latch demonstrating our ability to link physical locks, Wi-Fi microcontrollers, and third-party SMS/OTP APIs.
-                  </p>
-                </div>
-              </div>
-              <div className="p-5 pt-0">
-                <div className="mb-4">
-
-                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
-                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">
-                      ESP8266 Wi-Fi
-                    </span>
-                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">
-                      Twilio SMS API
-                    </span>
-                    <span className="bg-slate-50 border border-slate-200 text-slate-500 px-2 py-0.5 rounded">
-                      Relay Controller
-                    </span>
-                  </div>
-                </div>
-                <a
-                  href="/projects/otp-door-lock"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-purple-600 hover:text-purple-700 gap-1.5"
-                >
-                  <span>Read Case Study</span>
-                  <i className="fas fa-chevron-right text-[9px]"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* Project 5 */}
-            <div
-              className="col-span-1 sm:col-span-1 lg:col-span-2 lg:col-start-4 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="h-44 bg-slate-50 relative overflow-hidden border-b border-slate-200">
@@ -741,6 +788,7 @@ function MainComponent() {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </section>
