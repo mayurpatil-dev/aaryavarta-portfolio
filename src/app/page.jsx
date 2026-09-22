@@ -105,7 +105,7 @@ function MainComponent() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-6 xl:space-x-8 font-mono text-sm tracking-wide font-medium">
+          <div className="hidden lg:flex space-x-6 xl:space-x-8 font-sans font-medium text-sm tracking-wide font-medium">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-indigo-300 hover:text-pink-400 transition-all duration-300 relative group py-2"
@@ -179,7 +179,7 @@ function MainComponent() {
           }`}
         >
           <div className="mt-2 pb-4 px-2">
-            <div className="flex flex-col space-y-2 pt-2 font-mono text-sm tracking-wide">
+            <div className="flex flex-col space-y-2 pt-2 font-sans font-medium text-sm tracking-wide">
               <button
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -247,8 +247,8 @@ function MainComponent() {
         
         <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
           {/* Status Label */}
-          <div className="font-mono text-xs sm:text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 px-4 py-1.5 rounded-md inline-flex items-center gap-2 mb-8 animate-fade-in-up">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse-glow"></span>
+          <div className="text-xs sm:text-sm text-indigo-200 inline-flex items-center gap-2 mb-8 animate-fade-in-up font-sans font-medium tracking-wide">
+            <span className="w-2 h-2 rounded-full bg-pink-500 animate-pulse-glow shadow-[0_0_8px_rgba(236,72,153,0.8)]"></span>
             <span>System Status: Active | Ready for Hire</span>
           </div>
 
@@ -300,7 +300,7 @@ function MainComponent() {
             {/* Service 1 - Custom Software */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-pink-500 hover:bg-white/5 backdrop-blur-md hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-mono text-xs text-indigo-400">
+                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-sans font-medium text-xs text-indigo-400">
                   <span>SVC_01_SOFT</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -314,13 +314,13 @@ function MainComponent() {
                   Bespoke applications and internal operations tools built strictly around how your business actually works, eliminating bottleneck operations.
                 </p>
                 <div className="bg-white/10 p-3 rounded-lg border border-white/10 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
+                  <span className="block font-sans font-medium text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
                   <span className="text-indigo-100 text-xs font-semibold">Growing businesses outgrowing Excel sheets and needing custom automated pipelines.</span>
                 </div>
               </div>
               <div>
 
-                <ul className="space-y-2 text-indigo-200 text-sm font-mono">
+                <ul className="space-y-2 text-indigo-200 text-sm font-sans font-medium">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-400">&gt;</span> Custom ERP / CRM systems
                   </li>
@@ -337,7 +337,7 @@ function MainComponent() {
             {/* Service 2 - Pre-built Products */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-pink-500 hover:bg-white/5 backdrop-blur-md hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-mono text-xs text-indigo-400">
+                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-sans font-medium text-xs text-indigo-400">
                   <span>SVC_02_PROD</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -351,13 +351,13 @@ function MainComponent() {
                   Ready-to-deploy tools and administrative portals you can license and adapt rapidly instead of engineering from absolute zero.
                 </p>
                 <div className="bg-white/10 p-3 rounded-lg border border-white/10 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
+                  <span className="block font-sans font-medium text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
                   <span className="text-indigo-100 text-xs font-semibold">Small to mid-sized businesses wanting quick, affordable, and field-tested dashboards.</span>
                 </div>
               </div>
               <div>
 
-                <ul className="space-y-2 text-indigo-200 text-sm font-mono">
+                <ul className="space-y-2 text-indigo-200 text-sm font-sans font-medium">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-400">&gt;</span> RFID/Biometric attendance
                   </li>
@@ -374,7 +374,7 @@ function MainComponent() {
             {/* Service 3 - IoT Automation */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-pink-500 hover:bg-white/5 backdrop-blur-md hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-mono text-xs text-indigo-400">
+                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-sans font-medium text-xs text-indigo-400">
                   <span>SVC_03_IOT</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
@@ -388,13 +388,13 @@ function MainComponent() {
                   Connected sensors, microcontrollers, and physical devices designed to automatically monitor telemetry, issue alerts, and trigger responses.
                 </p>
                 <div className="bg-white/10 p-3 rounded-lg border border-white/10 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
+                  <span className="block font-sans font-medium text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
                   <span className="text-indigo-100 text-xs font-semibold">Logistics operators, warehouse owners, and farmers needing remote eyes on assets.</span>
                 </div>
               </div>
               <div>
 
-                <ul className="space-y-2 text-indigo-200 text-sm font-mono">
+                <ul className="space-y-2 text-indigo-200 text-sm font-sans font-medium">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-400">&gt;</span> Cold-chain temperature alerts
                   </li>
@@ -411,7 +411,7 @@ function MainComponent() {
             {/* Service 4 - IT Automation */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-pink-500 hover:bg-white/5 backdrop-blur-md hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-mono text-xs text-indigo-400">
+                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-sans font-medium text-xs text-indigo-400">
                   <span>SVC_04_IT</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -425,13 +425,13 @@ function MainComponent() {
                   Custom backend scripts, integration pipelines, and schedulers that completely take over repetitive, manual administrative tasks.
                 </p>
                 <div className="bg-white/10 p-3 rounded-lg border border-white/10 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
+                  <span className="block font-sans font-medium text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
                   <span className="text-indigo-100 text-xs font-semibold">Operations and IT managers spending hours copy-pasting data between services.</span>
                 </div>
               </div>
               <div>
 
-                <ul className="space-y-2 text-indigo-200 text-sm font-mono">
+                <ul className="space-y-2 text-indigo-200 text-sm font-sans font-medium">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-400">&gt;</span> Automated invoice generation
                   </li>
@@ -448,7 +448,7 @@ function MainComponent() {
             {/* Service 5 - Embedded Systems */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-pink-500 hover:bg-white/5 backdrop-blur-md hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-mono text-xs text-indigo-400">
+                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-sans font-medium text-xs text-indigo-400">
                   <span>SVC_05_EMB</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -462,13 +462,13 @@ function MainComponent() {
                   Bespoke electrical hardware, sensor interface integrations, custom printed circuit designs, and optimized firmware coding.
                 </p>
                 <div className="bg-white/10 p-3 rounded-lg border border-white/10 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
+                  <span className="block font-sans font-medium text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
                   <span className="text-indigo-100 text-xs font-semibold">Hardware developers, IoT product builders, and prototyping startups.</span>
                 </div>
               </div>
               <div>
 
-                <ul className="space-y-2 text-indigo-200 text-sm font-mono">
+                <ul className="space-y-2 text-indigo-200 text-sm font-sans font-medium">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-400">&gt;</span> Microcontroller boards & firmware
                   </li>
@@ -485,7 +485,7 @@ function MainComponent() {
             {/* Service 6 - PLC & Industrial */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-pink-500 hover:bg-white/5 backdrop-blur-md hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-mono text-xs text-indigo-400">
+                <div className="flex justify-between items-center mb-5 border-b border-white/10 pb-3 font-sans font-medium text-xs text-indigo-400">
                   <span>SVC_06_PLC</span>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
@@ -499,13 +499,13 @@ function MainComponent() {
                   Design, programming, and tuning of control systems for physical machinery and production processes to streamline manufacturing logic.
                 </p>
                 <div className="bg-white/10 p-3 rounded-lg border border-white/10 mb-6">
-                  <span className="block font-mono text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
+                  <span className="block font-sans font-medium text-[10px] uppercase text-pink-300 font-bold tracking-wider mb-1">Target Client</span>
                   <span className="text-indigo-100 text-xs font-semibold">Factory owners and plant operations managers seeking to modernize and reduce downtime.</span>
                 </div>
               </div>
               <div>
 
-                <ul className="space-y-2 text-indigo-200 text-sm font-mono">
+                <ul className="space-y-2 text-indigo-200 text-sm font-sans font-medium">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-400">&gt;</span> Control assembly line logic
                   </li>
@@ -552,7 +552,7 @@ function MainComponent() {
                     alt="Advance Vehicle Safety System"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-mono text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
+                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-sans font-medium text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
                     EMBEDDED_SYS
                   </div>
                 </div>
@@ -568,7 +568,7 @@ function MainComponent() {
               <div className="p-5 pt-0">
                 <div className="mb-4">
 
-                  <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">
                       IoT Sensors
                     </span>
@@ -584,7 +584,7 @@ function MainComponent() {
                   href="/projects/vehicle-safety"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-pink-400 hover:text-pink-300 gap-1.5"
+                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-pink-400 hover:text-pink-300 gap-1.5"
                 >
                   <span>Read Case Study</span>
                   <i className="fas fa-chevron-right text-[9px]"></i>
@@ -603,7 +603,7 @@ function MainComponent() {
                     alt="IoT Based Hostel Access and Attendance Monitoring"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-mono text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
+                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-sans font-medium text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
                     IOT_PRODUCT
                   </div>
                 </div>
@@ -619,7 +619,7 @@ function MainComponent() {
               <div className="p-5 pt-0">
                 <div className="mb-4">
 
-                  <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">
                       RFID / ESP32
                     </span>
@@ -635,7 +635,7 @@ function MainComponent() {
                   href="/projects/hostel-management"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-pink-400 hover:text-pink-300 gap-1.5"
+                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-pink-400 hover:text-pink-300 gap-1.5"
                 >
                   <span>Read Case Study</span>
                   <i className="fas fa-chevron-right text-[9px]"></i>
@@ -654,7 +654,7 @@ function MainComponent() {
                     alt="AI-based Drone for Disaster Conditions"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-mono text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
+                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-sans font-medium text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
                     AUTONOMOUS_HW
                   </div>
                 </div>
@@ -670,7 +670,7 @@ function MainComponent() {
               <div className="p-5 pt-0">
                 <div className="mb-4">
 
-                  <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">
                       Edge AI / Vision
                     </span>
@@ -686,7 +686,7 @@ function MainComponent() {
                   href="/projects/ai-drone"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-pink-400 hover:text-pink-300 gap-1.5"
+                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-pink-400 hover:text-pink-300 gap-1.5"
                 >
                   <span>Read Case Study</span>
                   <i className="fas fa-chevron-right text-[9px]"></i>
@@ -705,7 +705,7 @@ function MainComponent() {
                     alt="OTP Based Home Door Lock System"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-mono text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
+                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-sans font-medium text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
                     SECURITY_AUTO
                   </div>
                 </div>
@@ -721,7 +721,7 @@ function MainComponent() {
               <div className="p-5 pt-0">
                 <div className="mb-4">
 
-                  <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">
                       ESP8266 Wi-Fi
                     </span>
@@ -737,7 +737,7 @@ function MainComponent() {
                   href="/projects/otp-door-lock"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-pink-400 hover:text-pink-300 gap-1.5"
+                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-pink-400 hover:text-pink-300 gap-1.5"
                 >
                   <span>Read Case Study</span>
                   <i className="fas fa-chevron-right text-[9px]"></i>
@@ -756,7 +756,7 @@ function MainComponent() {
                     alt="Mouse Poking Device Using LDR"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-mono text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
+                  <div className="absolute top-3 left-3 bg-white/90 border border-white/10 font-sans font-medium text-[10px] text-pink-400 px-2 py-0.5 rounded font-bold">
                     CUSTOM_HARDWARE
                   </div>
                 </div>
@@ -772,7 +772,7 @@ function MainComponent() {
               <div className="p-5 pt-0">
                 <div className="mb-4">
 
-                  <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                  <div className="flex flex-wrap gap-1.5 font-sans font-medium text-[10px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">
                       LDR Photoresistor
                     </span>
@@ -788,7 +788,7 @@ function MainComponent() {
                   href="/projects/mouse-poking-device"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-mono font-bold text-pink-400 hover:text-pink-300 gap-1.5"
+                  className="inline-flex items-center text-xs font-sans font-medium font-bold text-pink-400 hover:text-pink-300 gap-1.5"
                 >
                   <span>Read Case Study</span>
                   <i className="fas fa-chevron-right text-[9px]"></i>
@@ -823,7 +823,7 @@ function MainComponent() {
             <p className="text-base sm:text-lg text-indigo-100 italic mb-4 leading-relaxed">
               "Dream is not that which you see while sleeping, it is something that does not let you sleep."
             </p>
-            <span className="font-mono text-xs text-pink-400 tracking-wider font-bold">
+            <span className="font-sans font-medium text-xs text-pink-400 tracking-wider font-bold">
               — DR. A.P.J. ABDUL KALAM
             </span>
           </div>
@@ -844,7 +844,7 @@ function MainComponent() {
                 <h3 className="text-lg font-bold font-sans text-white group-hover:text-pink-400 transition-colors duration-300">
                   Mayur Patil
                 </h3>
-                <p className="text-pink-400 font-mono text-xs mb-4 tracking-wide">
+                <p className="text-pink-400 font-sans font-medium text-xs mb-4 tracking-wide">
                   Lead Embedded & IoT Architect
                 </p>
                 <p className="text-indigo-300 text-xs sm:text-sm mb-6 leading-relaxed">
@@ -855,7 +855,7 @@ function MainComponent() {
               <div>
                 <div className="mb-5 border-t border-white/5 pt-4">
 
-                  <div className="flex flex-wrap gap-1.5 justify-center font-mono text-[9px]">
+                  <div className="flex flex-wrap gap-1.5 justify-center font-sans font-medium text-[9px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">IoT Networks</span>
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">Firmware Dev</span>
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">PCB Layout</span>
@@ -865,7 +865,7 @@ function MainComponent() {
                   href="/portfolio/mayur"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 group/btn"
+                  className="font-sans font-medium text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 group/btn"
                 >
                   <span>View Portfolio</span>
                   <i className="fa-solid fa-chevron-right text-[9px] group-hover/btn:translate-x-0.5 transition-transform"></i>
@@ -887,7 +887,7 @@ function MainComponent() {
                 <h3 className="text-lg font-bold font-sans text-white group-hover:text-pink-400 transition-colors duration-300">
                   Ganesh Wankhade
                 </h3>
-                <p className="text-pink-400 font-mono text-xs mb-4 tracking-wide">
+                <p className="text-pink-400 font-sans font-medium text-xs mb-4 tracking-wide">
                   Hardware Integration Expert
                 </p>
                 <p className="text-indigo-300 text-xs sm:text-sm mb-6 leading-relaxed">
@@ -898,7 +898,7 @@ function MainComponent() {
               <div>
                 <div className="mb-5 border-t border-white/5 pt-4">
 
-                  <div className="flex flex-wrap gap-1.5 justify-center font-mono text-[9px]">
+                  <div className="flex flex-wrap gap-1.5 justify-center font-sans font-medium text-[9px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">Hardware Design</span>
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">Integration</span>
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">Networking</span>
@@ -908,7 +908,7 @@ function MainComponent() {
                   href="/portfolio/ganesh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 group/btn"
+                  className="font-sans font-medium text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 group/btn"
                 >
                   <span>View Portfolio</span>
                   <i className="fa-solid fa-chevron-right text-[9px] group-hover/btn:translate-x-0.5 transition-transform"></i>
@@ -930,7 +930,7 @@ function MainComponent() {
                 <h3 className="text-lg font-bold font-sans text-white group-hover:text-pink-400 transition-colors duration-300">
                   Yash Dhake
                 </h3>
-                <p className="text-pink-400 font-mono text-xs mb-4 tracking-wide">
+                <p className="text-pink-400 font-sans font-medium text-xs mb-4 tracking-wide">
                   Technical Documentation Specialist
                 </p>
                 <p className="text-indigo-300 text-xs sm:text-sm mb-6 leading-relaxed">
@@ -941,7 +941,7 @@ function MainComponent() {
               <div>
                 <div className="mb-5 border-t border-white/5 pt-4">
 
-                  <div className="flex flex-wrap gap-1.5 justify-center font-mono text-[9px]">
+                  <div className="flex flex-wrap gap-1.5 justify-center font-sans font-medium text-[9px]">
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">Technical Writing</span>
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">System Blueprints</span>
                     <span className="bg-white/5 border border-white/10 text-indigo-300 px-2 py-0.5 rounded">QA Auditing</span>
@@ -951,7 +951,7 @@ function MainComponent() {
                   href="/portfolio/yash"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 group/btn"
+                  className="font-sans font-medium text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 group/btn"
                 >
                   <span>View Portfolio</span>
                   <i className="fa-solid fa-chevron-right text-[9px] group-hover/btn:translate-x-0.5 transition-transform"></i>
@@ -984,7 +984,7 @@ function MainComponent() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-mono uppercase text-indigo-400 mb-2">
+                  <label className="block text-xs font-sans font-medium uppercase text-indigo-400 mb-2">
                     Name
                   </label>
                   <input
@@ -999,7 +999,7 @@ function MainComponent() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono uppercase text-indigo-400 mb-2">
+                  <label className="block text-xs font-sans font-medium uppercase text-indigo-400 mb-2">
                     Email
                   </label>
                   <input
@@ -1015,7 +1015,7 @@ function MainComponent() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-indigo-400 mb-2">
+                <label className="block text-xs font-sans font-medium uppercase text-indigo-400 mb-2">
                   Subject
                 </label>
                 <input
@@ -1030,7 +1030,7 @@ function MainComponent() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-indigo-400 mb-2">
+                <label className="block text-xs font-sans font-medium uppercase text-indigo-400 mb-2">
                   Service Category
                 </label>
                 <select
@@ -1050,7 +1050,7 @@ function MainComponent() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-indigo-400 mb-2">
+                <label className="block text-xs font-sans font-medium uppercase text-indigo-400 mb-2">
                   Message / Details
                 </label>
                 <textarea
@@ -1065,7 +1065,7 @@ function MainComponent() {
               </div>
 
               {submitMessage && (
-                <div className="text-red-600 text-xs font-mono text-center animate-fade-in">
+                <div className="text-red-600 text-xs font-sans font-medium text-center animate-fade-in">
                   Error: {submitMessage}
                 </div>
               )}
@@ -1085,7 +1085,7 @@ function MainComponent() {
                     <span>Send Message</span>
                   )}
                 </button>
-                <span className="text-xs font-mono text-indigo-400 block text-center">Response typically sent within 24–48 hours.</span>
+                <span className="text-xs font-sans font-medium text-indigo-400 block text-center">Response typically sent within 24–48 hours.</span>
               </div>
             </form>
           </div>
@@ -1097,7 +1097,7 @@ function MainComponent() {
         <div className="w-full max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center md:text-left">
-              <div className="text-xl font-bold text-zinc-100 mb-4 font-mono">
+              <div className="text-xl font-bold text-zinc-100 mb-4 font-sans font-medium">
                 AARYAVARTA
               </div>
               <p className="text-indigo-400 mb-4 text-sm leading-relaxed">
@@ -1126,7 +1126,7 @@ function MainComponent() {
             </div>
 
             <div className="text-center md:text-left">
-              <h3 className="font-mono text-xs text-purple-400 uppercase tracking-widest mb-4">LINKS</h3>
+              <h3 className="font-sans font-medium text-xs text-purple-400 uppercase tracking-widest mb-4">LINKS</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
@@ -1164,7 +1164,7 @@ function MainComponent() {
             </div>
 
             <div className="text-center md:text-left">
-              <h3 className="font-mono text-xs text-purple-400 uppercase tracking-widest mb-4">SOLUTIONS</h3>
+              <h3 className="font-sans font-medium text-xs text-purple-400 uppercase tracking-widest mb-4">SOLUTIONS</h3>
               <ul className="space-y-2 text-sm text-indigo-400">
                 <li>Custom ERP & Portals</li>
                 <li>RFID Access Control</li>
@@ -1174,7 +1174,7 @@ function MainComponent() {
               </ul>
             </div>
 
-            <div className="text-center md:text-left font-mono">
+            <div className="text-center md:text-left font-sans font-medium">
               <h3 className="text-xs text-purple-400 uppercase tracking-widest mb-4">INFO</h3>
               <ul className="space-y-2 text-xs text-indigo-400">
                 <li>Sys_Node: contact@aaryavarta</li>
@@ -1184,7 +1184,7 @@ function MainComponent() {
             </div>
           </div>
 
-          <div className="border-t border-zinc-900 mt-10 pt-8 text-center text-indigo-300 text-xs font-mono">
+          <div className="border-t border-zinc-900 mt-10 pt-8 text-center text-indigo-300 text-xs font-sans font-medium">
             <p>&copy; 2026 Aaryavarta. All rights reserved.</p>
           </div>
         </div>
