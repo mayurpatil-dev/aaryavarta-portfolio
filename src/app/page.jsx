@@ -248,11 +248,6 @@ function MainComponent() {
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
           
           <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
-            {/* Status Label */}
-            <div className="text-xs sm:text-sm text-slate-600 bg-white shadow-sm border border-slate-200 px-5 py-2 rounded-full inline-flex items-center gap-2 mb-8 animate-fade-in-up font-sans font-medium tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-purple-600 animate-pulse-glow shadow-[0_0_8px_rgba(147,51,234,0.6)]"></span>
-              <span>System Status: Active | Ready for Hire</span>
-            </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight max-w-2xl animate-fade-in-up font-sans" style={{ animationDelay: "0.2s" }}>
               We build the <span className="text-purple-600 drop-shadow-[0_2px_10px_rgba(147,51,234,0.1)]">systems</span> that run your business.
@@ -308,13 +303,6 @@ function MainComponent() {
             {/* Service 1 - Custom Software */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-slate-200 pb-3 font-sans font-medium text-xs text-slate-500">
-                  <span>SVC_01_SOFT</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-600 font-bold">ONLINE</span>
-                  </div>
-                </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
                   Custom Software Development
                 </h3>
@@ -345,13 +333,6 @@ function MainComponent() {
             {/* Service 2 - Pre-built Products */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-slate-200 pb-3 font-sans font-medium text-xs text-slate-500">
-                  <span>SVC_02_PROD</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-600 font-bold">ONLINE</span>
-                  </div>
-                </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
                   Pre-built Software Products
                 </h3>
@@ -382,13 +363,6 @@ function MainComponent() {
             {/* Service 3 - IoT Automation */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-slate-200 pb-3 font-sans font-medium text-xs text-slate-500">
-                  <span>SVC_03_IOT</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
-                    <span className="text-purple-600 font-bold">READY</span>
-                  </div>
-                </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
                   IoT Automation
                 </h3>
@@ -419,13 +393,6 @@ function MainComponent() {
             {/* Service 4 - IT Automation */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-slate-200 pb-3 font-sans font-medium text-xs text-slate-500">
-                  <span>SVC_04_IT</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-600 font-bold">ONLINE</span>
-                  </div>
-                </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
                   IT Automation & Scripting
                 </h3>
@@ -456,13 +423,6 @@ function MainComponent() {
             {/* Service 5 - Embedded Systems */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-slate-200 pb-3 font-sans font-medium text-xs text-slate-500">
-                  <span>SVC_05_EMB</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-emerald-600 font-bold">ONLINE</span>
-                  </div>
-                </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
                   Embedded Systems Engineering
                 </h3>
@@ -493,13 +453,6 @@ function MainComponent() {
             {/* Service 6 - PLC & Industrial */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
-                <div className="flex justify-between items-center mb-5 border-b border-slate-200 pb-3 font-sans font-medium text-xs text-slate-500">
-                  <span>SVC_06_PLC</span>
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
-                    <span className="text-purple-600 font-bold">READY</span>
-                  </div>
-                </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
                   PLC & Industrial Automation
                 </h3>
@@ -560,9 +513,6 @@ function MainComponent() {
                     alt="Advance Vehicle Safety System"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 font-sans font-medium text-[10px] text-purple-600 px-2 py-0.5 rounded font-bold">
-                    EMBEDDED_SYS
-                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
@@ -611,9 +561,6 @@ function MainComponent() {
                     alt="IoT Based Hostel Access and Attendance Monitoring"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 font-sans font-medium text-[10px] text-purple-600 px-2 py-0.5 rounded font-bold">
-                    IOT_PRODUCT
-                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
@@ -662,9 +609,6 @@ function MainComponent() {
                     alt="AI-based Drone for Disaster Conditions"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 font-sans font-medium text-[10px] text-purple-600 px-2 py-0.5 rounded font-bold">
-                    AUTONOMOUS_HW
-                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
@@ -713,9 +657,6 @@ function MainComponent() {
                     alt="OTP Based Home Door Lock System"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 font-sans font-medium text-[10px] text-purple-600 px-2 py-0.5 rounded font-bold">
-                    SECURITY_AUTO
-                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
@@ -764,9 +705,6 @@ function MainComponent() {
                     alt="Mouse Poking Device Using LDR"
                     className="object-cover w-full h-full opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 border border-slate-200 font-sans font-medium text-[10px] text-purple-600 px-2 py-0.5 rounded font-bold">
-                    CUSTOM_HARDWARE
-                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold font-sans mb-2 text-slate-900 group-hover:text-purple-600 transition-colors duration-300">
@@ -1185,9 +1123,9 @@ function MainComponent() {
             <div className="text-center md:text-left font-sans font-medium">
               <h3 className="text-xs text-amber-500 uppercase tracking-widest mb-4">INFO</h3>
               <ul className="space-y-2 text-xs text-slate-500">
-                <li>Sys_Node: contact@aaryavarta</li>
-                <li>Sys_Tel: +91 80106 22267</li>
-                <li>Sys_Loc: Maharashtra, India</li>
+                <li>contact@aaryavarta</li>
+                <li>+91 80106 22267</li>
+                <li>Maharashtra, India</li>
               </ul>
             </div>
           </div>
