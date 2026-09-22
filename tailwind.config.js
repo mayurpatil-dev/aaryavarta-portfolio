@@ -6,7 +6,7 @@ module.exports = {
   "theme": {
     "extend": {
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', 'sans-serif'],
+        sans: ['var(--font-source-sans)', 'sans-serif'],
         mono: ['var(--font-jetbrains-mono)', 'monospace'],
       },
       screens: {

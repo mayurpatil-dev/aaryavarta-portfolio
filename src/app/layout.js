@@ -1,9 +1,9 @@
-import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+import { Source_Sans_3, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const spaceGrotesk = Space_Grotesk({
+const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-source-sans',
 })
 
 const jetbrainsMono = JetBrains_Mono({
@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${sourceSans3.variable} ${jetbrainsMono.variable}`}>
       <head>
         {/* Font Awesome CDN */}
         <link

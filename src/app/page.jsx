@@ -97,7 +97,7 @@ function MainComponent() {
           {/* Logo */}
           <div className="flex items-center gap-2 select-none animate-slide-in-left w-auto justify-start cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <img
-              src="/aaryvarta_logo-removebg-2.png"
+              src="/aarya_logo-Photoroom.png"
               alt="Aaryavarta Logo"
               className="h-9 sm:h-12 lg:h-14 w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
               style={{ maxWidth: '180px' }}
