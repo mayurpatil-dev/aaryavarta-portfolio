@@ -165,18 +165,16 @@ function MainComponent() {
             className="lg:hidden text-slate-500 hover:text-purple-600 transition-all duration-300 p-2"
           >
             <i
-              className={`fas ${
-                isMobileMenuOpen ? "fa-times" : "fa-bars"
-              } text-xl transition-transform duration-300`}
+              className={`fas ${isMobileMenuOpen ? "fa-times" : "fa-bars"
+                } text-xl transition-transform duration-300`}
             ></i>
           </button>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 bg-white shadow-sm border-b border-slate-200 ${
-            isMobileMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`lg:hidden overflow-hidden transition-all duration-300 bg-white shadow-sm border-b border-slate-200 ${isMobileMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+            }`}
         >
           <div className="mt-2 pb-4 px-2">
             <div className="flex flex-col space-y-2 pt-2 font-sans font-medium text-sm tracking-wide">
@@ -244,15 +242,15 @@ function MainComponent() {
         {/* Glow Effects */}
         <div className="absolute top-1/4 left-1/4 -translate-x-1/2 w-[350px] h-[350px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-yellow-400/10 rounded-full blur-[100px] pointer-events-none"></div>
-        
+
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
-          
+
           <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight max-w-2xl animate-fade-in-up font-sans" style={{ animationDelay: "0.2s" }}>
               We build the <span className="text-purple-600 drop-shadow-[0_2px_10px_rgba(147,51,234,0.1)]">systems</span> that run your business.
             </h1>
-            
+
             <p className="text-base sm:text-xl text-slate-600 mb-10 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
               Custom software, IoT, embedded & PLC automation — designed, built, and deployed by Aaryavarta. We solve automation and digitization problems for your business.
             </p>
@@ -272,11 +270,11 @@ function MainComponent() {
               </button>
             </div>
           </div>
-          
+
           <div className="flex-1 w-full max-w-lg lg:max-w-none animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <img src="/vector-Photoroom.png" alt="Robotic Process Automation Vector" className="w-full h-auto object-contain drop-shadow-xl hover:scale-[1.02] transition-transform duration-500" />
           </div>
-          
+
         </div>
       </section>
 
@@ -299,7 +297,7 @@ function MainComponent() {
 
           {/* Grid of 6 Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             {/* Service 1 - Custom Software */}
             <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 hover:border-purple-600 hover:bg-white shadow-sm hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between">
               <div>
@@ -647,7 +645,7 @@ function MainComponent() {
               </div>
             </div>
 
-{/* Project 1 */}
+            {/* Project 1 */}
             <div
               className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
@@ -695,8 +693,8 @@ function MainComponent() {
               </div>
             </div>
 
-            
-{/* Project 2 */}
+
+            {/* Project 2 */}
             <div
               className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
@@ -744,8 +742,8 @@ function MainComponent() {
               </div>
             </div>
 
-            
-{/* Project 5 */}
+
+            {/* Project 5 */}
             <div
               className="col-span-1 sm:col-span-1 lg:col-span-2 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden hover:border-purple-600 hover:shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-all duration-300 group flex flex-col justify-between"
             >
@@ -929,7 +927,7 @@ function MainComponent() {
                   Yash Dhake
                 </h3>
                 <p className="text-purple-600 font-sans font-medium text-xs mb-4 tracking-wide">
-                  Technical Documentation Specialist
+                  Technical Specialist
                 </p>
                 <p className="text-slate-500 text-xs sm:text-sm mb-6 leading-relaxed">
                   Coordinates code audits, client-facing system manuals, component registries, and hardware-software integration blueprints.
@@ -979,7 +977,7 @@ function MainComponent() {
 
           <div className="bg-white shadow-sm border border-slate-200 rounded-xl p-6 sm:p-8 max-w-2xl mx-auto hover:border-slate-300 transition-all duration-300">
             <form onSubmit={handleContactSubmit} className="space-y-6">
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs font-sans font-medium uppercase text-slate-500 mb-2">
@@ -1175,8 +1173,8 @@ function MainComponent() {
             <div className="text-center md:text-left font-sans font-medium">
               <h3 className="text-xs text-amber-500 uppercase tracking-widest mb-4">INFO</h3>
               <ul className="space-y-2 text-xs text-slate-500">
-                <li>contact@aaryavarta</li>
-                <li>+91 80106 22267</li>
+                <li>[EMAIL_ADDRESS]</li>
+                <li>+91 90967 10572</li>
                 <li>Maharashtra, India</li>
               </ul>
             </div>
